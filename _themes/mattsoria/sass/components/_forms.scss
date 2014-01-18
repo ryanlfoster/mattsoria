@@ -1,0 +1,38 @@
+// Forms
+
+form {
+  width: 100%;
+  position: relative;
+  .js-float-label-wrapper {
+    &:first-of-type {
+      margin-top: -1rem;
+    }
+  }
+  label {
+    @include opacity(0.5);
+  }
+  input, textarea {
+    width: 100%;
+    color: $dark;
+    max-width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: $light;
+    border: 3px solid $dark;
+    @include box-shadow(1px 1px $rgba);
+    &:first-child {
+      margin-top: 0;
+    }
+    &:hover, &:focus, &:active {
+      border-color: $base;
+    }
+  }
+
+  textarea {
+    margin-bottom: 1rem;
+  }
+
+  @include min-screen($bpMed) {
+
+  }
+}

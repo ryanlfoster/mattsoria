@@ -1,0 +1,172 @@
+// Grid expander
+
+.og-grid {
+  li {
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto 2rem;
+    vertical-align: top;
+    > a, > img {
+      border: none;
+      outline: none;
+      display: block;
+      position: relative;
+    }
+    &.og-expanded > a::after {
+      width: 0;
+      top: auto;
+      height: 0;
+      left: 50%;
+      z-index: 2;
+      content: " ";
+      position: absolute;
+      pointer-events: none;
+      margin: -1.3rem 0 0 -0.6rem;
+      border: solid transparent;
+      border-bottom-color: #D4D2B4;
+      border-width: 1rem; 
+    }
+  }
+  .og-expander {
+    left: 0;
+    top: auto;
+    height: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    overflow: hidden;
+    padding: 3rem 2rem;
+    position: absolute;
+    background: rgba(0,0,0,0.10);
+  }
+  .og-expander-inner {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .icon-close {
+    top: 3rem;
+    z-index: 1;
+    right: 2rem;
+    color: $dark;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    @include translateY(0);
+    @include text-shadow(1px 1px $rgba);
+    @include transition(transform 0.3s ease 0s);
+    &:hover, &:focus {
+      @include translateY(-2px);
+    }
+    &:active {
+      outline: none;
+      @include translateY(-1px)
+    }
+  }
+  .og-fullimg,
+  .og-details {
+    width: 50%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .og-fullimg {
+    overflow: hidden;
+    max-height: 400px;
+  }
+  .og-details {
+    padding: 0 2rem 0 1rem;
+    h2 {
+      margin: 0;
+      color: $black;
+      font-size: $big;
+      font-weight: $bold;
+      @include text-shadow(1px 1px $rgba);
+    }
+    h3 {
+      color: $white;
+      font-size: $small;
+      margin-bottom: 1.5rem;
+      font-weight: $regular;
+    }
+    p {
+      color: $dark;
+      font-size: $small;
+    }
+    a {
+      @include box-shadow(none);
+    }
+  }
+  .og-fullimg {
+    text-align: center;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: inline-block;  
+    }
+  }
+  .og-loading {
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    margin: -25px 0 0 -25px;
+    animation: loader 0.5s infinite ease-in-out both;
+    -moz-animation: loader 0.5s infinite ease-in-out both;
+    -webkit-animation: loader 0.5s infinite ease-in-out both;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  }
+
+  @-webkit-keyframes loader {
+    0% { background: #ddd; }
+    33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+    66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+  }
+
+  @-moz-keyframes loader {
+    0% { background: #ddd; }
+    33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+    66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+  }
+
+  @keyframes loader {
+    0% { background: #ddd; }
+    33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+    66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+  }
+
+  @include min-screen($bpMed) {
+    li {
+      height: 0;    
+      width: 30%;
+      margin-left: 4%;
+      overflow: hidden;
+      padding-bottom: 22.5%;
+      display: inline-block;
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include max-screen($bpMed) {
+    
+    .og-expander h3 { font-size: 32px; }
+    .og-expander p { font-size: 13px; }
+    .og-expander a { font-size: 12px; }
+
+  }
+
+  @include max-screen($bpSmall) {
+
+    .og-fullimg { display: none; }
+    .og-details { float: none; width: 100%; }
+    
+  }
+
+}

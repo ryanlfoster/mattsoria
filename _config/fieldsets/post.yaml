@@ -1,0 +1,23 @@
+fields:
+  subtitle:
+    display: Subtitle
+    required: false
+    type: text
+  categories:
+    display: Categories
+    required: true
+    default:
+    type: tags
+  summary:
+    display: Summary
+    required: true
+    type: text
+  featured-image:
+    display: Featured Image
+    type: file
+    allowed: [jpg]
+    destination: _themes/mattsoria/img/blog
+  content:
+    type: markitup
+
+hide: true

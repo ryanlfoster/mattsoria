@@ -1,0 +1,25 @@
+// Buttons
+
+.btn {
+  margin: 0;
+  border: none;
+  color: $white;
+  background: $base;
+  font-family: $sans;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  @include translateY(0);
+  border-bottom: 6px solid $rgba;
+  @include box-shadow(1px 1px $rgba);
+  @include text-shadow(1px 1px $rgba);
+  &:hover, &:focus {
+    margin-bottom: 1px;
+    @include translateY(1px);
+    border-bottom: 5px solid $rgba;
+  }
+  &:active {
+    margin-bottom: 3px;
+    @include translateY(3px);
+    border-bottom: 3px solid $rgba;
+  }
+}

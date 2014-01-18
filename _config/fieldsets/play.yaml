@@ -1,0 +1,27 @@
+fields:
+  _template:
+    display: Template
+    type: templates
+  categories:
+    display: Categories
+    required: true
+    default:
+    type: tags
+  weburl:
+    display: Web URL
+    type: text
+  thumbnail:
+    display: Image Thumbnail
+    type: file
+    allowed: [jpg]
+    destination: _themes/mattsoria/img/play
+  image:
+    display: Image
+    type: file
+    allowed: [jpg]
+    required: true
+    destination: _themes/mattsoria/img/play
+  content:
+    type: redactor
+
+hide: true

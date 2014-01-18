@@ -1,0 +1,50 @@
+// Typography
+
+// @font-face fonts
+@font-face {
+  font-family: 'mmmatt-soria';
+  src:url('fonts/mmmatt-soria.eot');
+  src:url('fonts/mmmatt-soria.eot?#iefix') format('embedded-opentype'),
+    url('fonts/mmmatt-soria.ttf') format('truetype'),
+    url('fonts/mmmatt-soria.woff') format('woff'),
+    url('fonts/mmmatt-soria.svg#mmmatt-soria') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Font Variables
+$sans: "europa", Helvetica, sans-serif;
+$serif: "rooney-web", Georgia, serif;
+$amp: Georgia, serif;
+$mmm: "mmmatt-soria", "europa", Helvetica, sans-serif;
+
+// Font Classes
+.amp {
+	font-family: $amp;
+}
+
+// Font weights
+$thin: 100;
+$slim: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+// Font sizes
+$small: 1rem; // 16px
+$mid: 1.25rem; // 20px
+$med: 2rem; // 32px
+$big: 3rem; // 48px
+$huge: 4rem;
+
+// FOUT fixer
+.wf-loading {
+  h1, h2, h3, h4, h5, h6, a, p {
+      visibility: hidden;
+   }
+}
+.wf-active {
+  h1, h2, h3, h4, h5, h6, a, p {
+    visibility: visible;
+  }
+}

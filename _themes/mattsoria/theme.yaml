@@ -1,0 +1,27 @@
+###########################################################################################
+#
+#  THEME VARIABLES
+#
+###########################################################################################
+
+# Theme name
+theme_name: mattsoria
+
+# Comments + Disqus
+disqus_account: mattsoria
+show_comments: yes
+
+# Homepage configuration
+home_work_items: 3
+home_blog_items: 3
+blog_page_items: 6
+
+# Global text snippets
+no_results_text: "Sorry, no results found."
+
+# Font Code
+font_code: <script type="text/javascript" src="//use.typekit.net/elg0uuw.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+# Analytics codes
+ga_account: UA-20365223-1
+ga_domain: mattsoria.com

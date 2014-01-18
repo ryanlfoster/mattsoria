@@ -1,0 +1,41 @@
+<section class="section intro">
+  <div class="global_wrapper">
+    <div class="animated fadeInDownBig">{{ content }}</div>
+  </div>
+</section>
+<section class="section recent_work">
+  <div class="global_wrapper">
+    <h2>Recent Work</h2>
+    {{ entries:listing folder="work" limit="{ home_work_items }" }}
+    <a href="{{ url }}" class="recent_work__item grid">
+      <div class="recent_work__screenshot one-half-left">
+        <img src="{{ image }}" alt="{{ title }} {{ categories_list }}">
+      </div>
+      <div class="recent_work__description one-half-right">
+        <h3>{{ title }}<span class="sub_header">{{ categories_list }}</span></h3>
+        <p>{{ description }} <span class="read_more">Learn more<i class="icon-arrow-right"></i></span></p>
+      </div>
+    </a>
+    {{ /entries:listing }}
+  </div>
+</section>
+<section class="section recent_blogposts">
+  <div class="global_wrapper">
+    <h2>Recent Blog Posts</h2>
+    <ol>
+      {{ entries:listing folder="blog" limit="{ home_blog_items }" }}
+        <li>
+          <a href="{{ url }}" class="blog_post grid">
+            <div class="one-third-left">
+              <h3>{{ title }}</h3>
+              <div class="post_meta"><span class="post_date">{{ datestamp format="M jS, Y" }}</span><span class="post_category"><i class="icon-{{ categories_list }}"></i></span></div>
+            </div>
+            <div class="two-thirds-right">
+              <p>{{ summary }} <span class="read_more">Read more<i class="icon-arrow-right"></i></span></p>
+            </div>
+          </a>
+        </li>
+      {{ /entries:listing }}
+    </ol>
+  </div>
+</section>

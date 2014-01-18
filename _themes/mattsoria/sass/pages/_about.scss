@@ -1,0 +1,96 @@
+// About page
+
+.about {
+  section {
+    a {
+      position: relative;
+      &:after {
+        left: 0;
+        top: 100%;
+        opacity: 0;
+        width: 100%;
+        content: "";
+        height: 3px;
+        position: absolute;
+        background: $rgba;
+        @include translateY(10px);
+        @include transition(opacity 0.3s ease 0s, transform 0.3s ease 0s);
+      }
+      &:hover, &:active, &:focus {
+        &:after {
+          opacity: 1;
+          @include translateY(0px);
+        }
+      }
+    }
+  }
+  .header_section {
+    background: image-url('matt_soria.jpg') center;
+    h2 {
+      margin: 0;
+      font-size: $huge;
+      text-align: center;
+      @include text-shadow(0 0 8px rgba(0,0,0,0.60));
+    }
+  }
+  .main_section {
+    h3, h4, h5, h6 {
+      color: $black;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1rem;
+      li {
+        color: $base;
+        list-style-type: disc;
+        a {
+          color: inherit;
+          font-weight: $bold;
+        }
+      }
+    }
+  }
+  .colophon_section {
+    background: $black;
+    h2 {
+      color: $base;
+    }
+    p {
+      color: $light;
+    }
+  }
+  .twitter_section {
+    background: #00acee;
+    h2 {
+      color: $base;
+      .sub_header {
+        color: $dark;
+      }
+    }
+    p {
+      color: $white;
+    }
+    #twitter_feed {
+      li {
+        padding: 2rem 0;
+        border-top: 1px solid rgba(0,0,0,0.10);
+        &:first-of-type {
+          border-top: none;
+        }
+      }
+      .timePosted {
+        color: $rgba;
+      }
+      .interact {
+        font-family: $sans;
+        a {
+          font-size: $small;
+          margin-left: 1rem;
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

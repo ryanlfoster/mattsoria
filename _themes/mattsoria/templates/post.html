@@ -1,0 +1,41 @@
+    <div class="blog blog-post">
+      {{ theme:partial src="blog-nav" }}
+      <section class="section">
+        {{ if featured-image }}
+        <div class="featured_image"><img src="{{ featured-image }}" /></div>
+        {{ endif }}
+        <div class="global_wrapper">
+          <article>
+            <header class="post_header">
+              <h2>{{ title }}</h2>
+              {{ if subtitle }}
+              <div class="post_subtitle">{{ subtitle }}</div>
+              {{ endif }}
+              <div class="post_meta"><span class="post_date">published on {{ datestamp format="M jS, Y" }}</span><span class="read-time">about a <span class="eta"></span> read</span><span class="comment_count"><a href="{{ url }}#disqus_thread"></a></span><span class="post_category"><i class="icon-{{ categories_list }}"></i></span></div>
+            </header>
+            <div class="post_content">
+              {{ content }}
+            </div>
+          </article>
+          {{ if show_comments }}
+          <div class="post_comments">
+            {{ disqus:comments account="{ disqus_account }" }}
+          </div>
+          {{ endif }}
+        </div>
+      </section>
+      <section class="section recent_blogposts">
+        <div class="global_wrapper">
+          <h2>Recent Blog Posts</h2>
+          <div class="grid">
+            {{ entries:listing folder="blog" limit="3" }}
+            <a href="{{ url }}" class="blog_post one-third-left">
+              <h3>{{ title }}</h3>
+              <div class="post_meta"><span class="post_date">{{ datestamp format="M jS, Y" }}</span><span class="post_category"><i class="icon-{{ categories_list }}"></i></span></div>
+              <p>{{ summary }} <span class="read_more">Read more<i class="icon-arrow-right"></i></span></p>
+            </a>
+            {{ /entries:listing }}
+          </div>
+        </div>
+      </section>
+    </div>

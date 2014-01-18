@@ -1,0 +1,45 @@
+// Work Page
+
+.work {
+  .og-grid {
+    li {
+      a {
+        img {
+          display: block;
+        }
+      }
+      .project_label {
+        padding: 0.25rem;
+        text-align: left;
+        position: relative;
+        pointer-events: none;
+        vertical-align: middle;
+        margin-top: -1.833333333rem;
+        background: rgba(38,44,43,0.75);
+        @include transition(margin 0.3s ease 0s);
+        h2 {
+          margin: 0;
+          color: $white;
+          font-size: $small;
+          @include text-shadow(none);
+        }
+        .sub_header {
+          height: 0;
+          color: $base;
+          overflow: hidden;
+          font-size: $small;
+          @include text-shadow(none);
+          @include transition(height 0.3s ease 0s);
+        }
+      }
+      &:hover, &:focus, &:active {
+        .project_label {
+          margin-top: -3.333333333rem;
+          .sub_header {
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

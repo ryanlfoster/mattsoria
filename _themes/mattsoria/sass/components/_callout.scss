@@ -1,0 +1,14 @@
+// Callout section
+
+.callout {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: $black;
+  .availability {
+    margin: 0;
+    display: block;
+    line-height: 1;
+    font-weight: $regular;
+    padding-bottom: 0.15rem;
+  }
+}

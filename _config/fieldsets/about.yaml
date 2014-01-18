@@ -1,0 +1,22 @@
+title: About Page
+
+fields:
+
+  availability:
+    display: Availability
+    type: select
+    options: 
+      - available
+      - unavailable
+  maincontent:
+    display: Main Content
+    required: true
+    type: markitup
+  content:
+    display: About Me Content
+    required: true
+    type: markitup
+  colophon:
+    display: About Site Content
+    required: true
+    type: markitup

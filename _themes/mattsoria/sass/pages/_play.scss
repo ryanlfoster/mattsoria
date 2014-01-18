@@ -1,0 +1,116 @@
+// Play page
+
+.play {
+  section {
+    overflow: hidden;
+    @include transition(height 0.5s ease 0s);
+    .toggle {
+      cursor: pointer;
+      color: $dark;
+      &:after {
+        speak: none;
+        content: "\e62d";
+        font-size: 1.5rem;
+        font-style: normal;
+        margin-left: 0.5rem;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: 'mmmatt-soria';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        @include transition(transform 0.3s ease 0s);
+      }
+      &:hover, &:focus {
+        &:after {
+          @include translateX(3px);
+        }
+      }
+    }
+    &.toggled {
+      .toggle {
+        &:after {
+          @include rotate(90deg);
+        }
+      }
+    }
+  }
+  .one-third-left {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+    a {
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    img {
+      display: block;
+    }
+    .image_label {
+      height: 0;
+      padding: 0;
+      width: 100%;
+      display: block;
+      bottom: -0.5rem;
+      padding: 0.25rem;
+      overflow: hidden;
+      text-align: left;
+      position: absolute;
+      pointer-events: none;
+      vertical-align: middle;
+      background: rgba(38,44,43,0.75);
+      @include transition(height 0.3s ease 0s, position 0.3s ease 0s);
+      h3 {
+        margin: 0;
+        color: $white;
+        overflow: hidden;
+        font-size: $small;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    &:hover, &:focus, &:active {
+      .image_label {
+        bottom: 0;
+        height: 2rem;
+      }
+    }
+  }
+  .photo_section {
+    background: $white;
+  }
+  .illustration_section {
+    background: $lightGray;
+  }
+  .web_section {
+    background: $light;
+  }
+
+  @include min-screen($bpMed) {
+    .one-third-left {
+      height: 0;
+      padding-bottom: calc(33.3333333% - 1rem);
+      img {
+        left: -50%;
+        max-width: 640px;
+        position: relative;
+      }
+      .image_label {
+        width: calc(100% - 1rem);
+      }
+    }
+    .web_section {
+      .one-third-left {
+        height: auto;
+        padding-bottom: 0;
+        img {
+          left: auto;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

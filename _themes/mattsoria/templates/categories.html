@@ -1,0 +1,20 @@
+<div class="blog blog-archive">
+  {{ theme:partial src="blog-nav" }}
+  <section class="section recent_blogposts">
+    <div class="global_wrapper">
+      <div class="grid">
+        <ol>
+        {{ taxonomy:listing folder="blog" type="categories" }}
+            <li>
+              <a href="{{ url }}" class="blog_post grid">
+                <div class="one-third-left">
+                  <h3>{{ name|title }}<span class="post_category"><i class="icon-{{ name }}"></i></span></h3>
+                </div>
+              </a>
+            </li>
+          {{ /taxonomy:listing }}
+        </ol>
+      </div>
+    </div>
+  </section>
+</div>

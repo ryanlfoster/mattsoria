@@ -1,0 +1,41 @@
+<div class="work project">
+  <section class="section main_section">
+    <div class="global_wrapper">
+      <article>
+        <h2>{{ title }} {{ if siteurl }}<a class="visit_site" href="{{ siteurl }}">visit site<i class="icon-arrow-right"></i></a>{{ endif }}<span class="sub_header">{{ categories_list }} | {{ year }}</span></h2>
+          <div class="featured_image">
+            <span data-picture data-alt="{{ title }} - {{ categories_list }}">
+              <span data-src="{{ smallimage }}"></span>
+              <span data-src="{{ smallimage2x }}" data-media="(min-device-pixel-ratio: 2.0)"></span>
+              <span data-src="{{ medimage }}" data-media="(min-width: 600px)"></span>
+              <span data-src="{{ medimage2x }}" data-media="(min-width: 600px) and (min-device-pixel-ratio: 2.0)"></span>
+              <span data-src="{{ largeimage }}" data-media="(min-width: 800px)"></span>
+              <span data-src="{{ largeimage2x }}" data-media="(min-width: 800px) and (min-device-pixel-ratio: 2.0)"></span>
+              <noscript>
+                  <img src="{{ smallimage }}" alt="{{ title }} - {{ categories_list }}">
+              </noscript>
+            </span>
+          </div>
+        {{ content }}
+      </article>
+    </div>
+  </section>
+  <section class="section recent_work">
+    <div class="global_wrapper">
+      <h2>Recent Work</h2>
+      <div class="grid">
+        {{ entries:listing folder="work" limit="3" }}
+          <a href="{{ url }}" class="recent_work__item one-third-left">
+            <div class="recent_work__screenshot">
+              <img src="{{ image }}" alt="{{ title }} {{ categories_list }}">
+            </div>
+            <div class="project_label">
+              <h3>{{ title }}</h3>
+              <h4 class="sub_header">{{ categories_list }}</h4>
+            </div>
+          </a>
+        {{ /entries:listing }}
+      </div>
+    </div>
+  </section>
+</div>

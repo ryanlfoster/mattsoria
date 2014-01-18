@@ -1,0 +1,15 @@
+      <div class="nav_wrapper">
+        <nav class="main_nav" role="navigation">
+          <ul>
+            {{ nav from="/" max_depth="1" }}
+            <li><a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ endif }}>{{ title }}</a></li>
+            {{ /nav }}
+          </ul>
+        </nav>
+        <nav class="section_nav">
+          <ul>
+            <li><a id="next" href="#"><i class="icon-arrow-down"></i></a></li>
+            <li><a id="prev" href="#"><i class="icon-arrow-up"></i></a></li>
+          </ul>
+        </nav>
+      </div>

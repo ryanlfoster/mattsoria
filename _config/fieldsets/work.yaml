@@ -1,0 +1,72 @@
+fields:
+  _template:
+    display: Template
+    type: templates
+    default: project
+  categories:
+    display: Categories
+    required: true
+    default:
+    type: tags
+  description:
+    display: Description
+    required: true
+    type: text
+  year:
+    display: Year
+    type: text
+  siteurl:
+    display: Project Url
+    type: text
+  thumbnail:
+    display: Thumbnail
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  largethumbnail:
+    display: Thumbnail
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  smallimage:
+    display: Image (Small)
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  smallimage2x:
+    display: Image (Small@2x)
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  medimage:
+    display: Image
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  medimage2x:
+    display: Image (@2x)
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  largeimage:
+    display: Large Image
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  largeimage2x:
+    display: Large Image @2x
+    type: file
+    allowed: [jpg, png]
+    required: true
+    destination: _themes/mattsoria/img/work
+  content:
+    type: redactor
+
+hide: true

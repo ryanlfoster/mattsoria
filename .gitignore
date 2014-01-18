@@ -1,0 +1,8 @@
+.sass-cache
+node_modules
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+_config/users
+_config/settings.yaml
+_themes/mattsoria/images

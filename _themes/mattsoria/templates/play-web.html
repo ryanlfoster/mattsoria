@@ -1,0 +1,19 @@
+<section class="section play_item play_item--web">
+  <div class="global_wrapper">
+    <a href="{{ weburl }}"><h2>{{ title }}</h2></a>
+    <a href="{{ weburl }}"><img src="{{ image }}" alt="{{ title }}" /></a>
+    <p>{{ content }}</p>
+  </div>
+</section>
+<section class="section play_nav">
+  {{ entries:previous folder="play" conditions="categories:web" }}
+    {{ if !no_results }}
+      <a class="previous-entry" href="{{ url }}"><i class="icon-arrow-left"></i> previous</a>
+    {{ endif }}
+  {{ /entries:previous }}
+  {{ entries:next folder="play" conditions="categories:web" }}
+    {{ if !no_results }}
+      <a class="next-entry" href="{{ url }}">next <i class="icon-arrow-right"></i></a>
+    {{ endif }}
+  {{ /entries:next }}
+</section>

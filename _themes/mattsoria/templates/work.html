@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="global_wrapper">
+    <ul class="og-grid grid">
+      {{ entries:listing folder="work" }}
+        <li>
+          <a href="{{ url }}" data-largesrc="{{ largethumbnail }}" data-title="{{ title }}" data-category="{{ categories_list }}" data-description="{{ description }}">
+            <img src="{{ thumbnail }}" alt="{{ title }}" />
+          </a>
+          <div class="project_label">
+            <h2>{{ title }}</h2>
+            <h3 class="sub_header">{{ categories_list }}</h3>
+          </div>
+        </li>
+      {{ /entries:listing }}
+    </ul>
+  </div>
+</section>

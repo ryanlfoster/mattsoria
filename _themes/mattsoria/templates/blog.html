@@ -1,0 +1,20 @@
+{{ theme:partial src="blog-nav" }}
+<section class="section recent_blogposts">
+  <div class="global_wrapper">
+    <ol>
+      {{ entries:listing folder="blog" limit="{blog_page_items}" paginate="true" }}
+        <li>
+          <a href="{{ url }}" class="blog_post grid">
+            <div class="one-third-left">
+              <h3>{{ title }}</h3>
+              <div class="post_meta"><span class="post_date">{{ datestamp format="M jS, Y" }}</span><span class="post_category"><i class="icon-{{ categories_list }}"></i></span></div>
+            </div>
+            <div class="two-thirds-right">
+              <p>{{ summary }} <span class="read_more">Read more<i class="icon-arrow-right"></i></span></p>
+            </div>
+          </a>
+        </li>
+      {{ /entries:listing }}
+    </ol>
+  </div>
+</section>

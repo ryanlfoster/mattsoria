@@ -1,0 +1,56 @@
+// Home page
+
+.home {
+  .intro {
+    padding: 1rem;
+    background: $black;
+    h2 {
+      color: $base;
+      text-align: center;
+      font-weight: $medium;
+    }
+  }
+
+  .recent_work {
+    background-color: $light;
+    h2 {
+      color: $black;
+    }
+    .recent_work__item {
+      width: 100%;
+      padding: 1rem;
+      width: calc(100% + 2rem);
+      background: rgba(0,0,0,0);
+      margin:  1rem -1rem 0 -1rem;
+      outline: 3px solid rgba(0,0,0,0);
+      @include transition(background 0.3s ease 0s, outline 0.3s ease 0s);
+      &:hover, &:focus, &:active {
+        outline: 3px solid $rgba;
+        background: rgba(0,0,0,0.10);
+        .read_more {
+          i {
+            @include translateX(3px);
+          }
+        }
+      }
+      h3 {
+        color: $black;
+        margin-top: 0;
+        font-size: $med;
+        font-weight: $bold;
+        @include text-shadow(1px 1px $rgba);
+        .sub_header {
+          color: $darkGray;
+          @include text-shadow(none);
+        }
+      }
+      p {
+        color: $dark;
+        margin-top: 1rem;
+      }
+      .read_more {
+        color: $black;
+      }
+    }
+  }
+}

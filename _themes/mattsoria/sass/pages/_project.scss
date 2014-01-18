@@ -1,0 +1,109 @@
+// Project
+
+.project {
+  .main_section {
+    background: $white;
+    h2 {
+      color: $base;
+      @include text-shadow(1px 1px $dark);
+      .visit_site {
+        color: $dark;
+        font-size: $small;
+        text-decoration: none;
+        @include text-shadow(none);
+        i {
+          display: inline-block;
+          vertical-align: middle;
+          @include translateX(0);
+          @include transition(transform 0.3s ease 0s);
+        }
+        &:hover, &:focus, &:active {
+          i {
+            @include translateX(3px);
+          }
+        }
+      }
+      .sub_header {
+        color: $darkGray;
+        @include text-shadow(none);
+      }
+    }
+    article {
+      h4, h5, h6 {
+        color: $dark;
+        font-size: $mid;
+        margin: 0 0 1rem;
+        line-height: 1.25;
+        font-family: $serif;
+      }
+      a {
+        text-decoration: underline;
+        @include transition(color 0.3s ease 0s);
+        &:hover, &:focus, &:active {
+          color: $black;
+        }
+      }
+      img {
+        margin: 1rem 0;
+      }
+      .featured_image {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .grid {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .recent_work {
+    h2 {
+      color: $black;
+      @include text-shadow(none);
+    }
+    .grid {
+      margin: 0 -1rem;
+      width: calc(100% + 2rem);
+    }
+    .recent_work__item {
+      padding: 1rem;
+      display: block;
+      position: relative;
+      img {
+        display: block;
+      }
+      .project_label {
+        padding: 0.25rem;
+        text-align: left;
+        position: relative;
+        pointer-events: none;
+        vertical-align: middle;
+        margin-top: -1.833333333rem;
+        background: rgba(38,44,43,0.75);
+        @include transition(margin 0.3s ease 0s);
+        h3 {
+          margin: 0;
+          color: $white;
+          font-size: $small;
+        }
+        .sub_header {
+          height: 0;
+          color: $base;
+          overflow: hidden;
+          font-size: $small;
+          @include transition(height 0.3s ease 0s);
+        }
+      }
+      &:hover, &:focus, &:active {
+        .project_label {
+          margin-top: -3.333333333rem;
+          .sub_header {
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+// header
+.main_header {
+  color: $white;
+  text-align: center;
+  padding: 2rem 0 0.5rem;
+  h1 {
+    color: $base;
+    line-height: 1;
+    font-size: $big;
+    font-family: $mmm;
+    margin: 0 0 1rem 0;
+    font-weight: $regular;
+    .mmmatt-a {
+      margin-right: -0.5rem;
+    }
+    .mmmatt-i {
+      margin: 0 -0.7rem 0 -0.8rem;
+    }
+  }
+  .nav_wrapper {
+    padding: 0.5rem;
+  }
+  .main_nav {
+    width: 100%;
+    ul {
+      margin: 0;
+      li {
+        margin-left: 1rem;
+        display: inline-block;
+        &:first-of-type {
+          margin-left: 0;
+        }
+        a {
+          float: left;
+          color: $light;
+          font-size: $small;
+          position: relative;
+          font-weight: $regular;
+          padding: 0.25rem 0.5rem;
+          text-transform: lowercase;
+          @include text-shadow(1px 1px $rgba);
+          &:after {
+            left: 0;
+            top: 100%;
+            opacity: 0;
+            width: 100%;
+            content: "";
+            height: 3px;
+            background: $rgba;
+            position: absolute;
+            @include translateY(10px);
+            @include border-radius(3px);
+            @include transition(opacity 0.3s ease 0s, transform 0.3s ease 0s);
+          }
+          &:hover, &:active, &:focus, &.current {
+            &:after {
+              opacity: 1;
+              @include translateY(0px);
+            }
+          }
+        }
+      }
+    }
+  }
+  .is_sticky {
+    .nav_wrapper {
+      z-index: 10;
+      width: 100%;
+      background: $black;
+      background-image: $noise;
+      @include box-shadow(0 2px $rgba);
+    }
+    .section_nav {
+      ul {
+        li {
+          a {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .section_nav {
+    top: 0;
+    right: 0;
+    display: none;
+    position: fixed;
+    ul {
+      padding: 0;
+      position: relative;
+      @include clearfix();
+      margin: 0.75rem 0.5rem 0 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        &:first-of-type {
+          margin-right: 0.25rem;
+        }
+        a {
+          color: $light;
+          padding: 0.5rem;
+          font-size: 1.5rem;
+          visibility: hidden;
+          @include text-shadow(0 2px $rgba);
+          i {
+            display: inline-block;
+            @include translateY(0);
+            @include transition(transform 0.3s ease 0s);
+          }
+          &:hover, &:focus {
+            outline: none;
+            .icon-arrow-up {
+              @include translateY(-2px);
+            }
+            .icon-arrow-down {
+              @include translateY(2px);
+            }
+          }
+          &:active {
+            outline: none;
+            .icon-arrow-up {
+              @include translateY(-1px)
+            }
+            .icon-arrow-down {
+              @include translateY(3px)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include min-screen($bpSmall) {
+    .section_nav {
+      display: inline-block;
+    }
+  }
+
+  @include min-screen($bpMed) {
+    .main_nav {
+      ul {
+        li {
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+
+}

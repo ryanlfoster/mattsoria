@@ -1,0 +1,23 @@
+// Variables
+
+// Colors
+$black: #262C2B;
+$white: #fff;
+$lightGray: #eee;
+$gray: #c2c2c2;
+$darkGray: #7c7c7c;
+$red: #E44B4B;
+$green: #63D67E;
+$base: #FFDA38; // #F97446; // #FFDB3D; // #F44013; // #EACB38; // #97B1B7; // #B7B397
+$light: #EFECD2; // #EAE4E0; // #EDEAC9; // #e8e8e8; // #CCD6D8; // #D8D5CC
+$dark: #4b5556; // #64B6C9 // #536468; // #80785C
+$rgba: rgba(0,0,0,0.20);
+
+// Breakpoints
+$bpSmall: 30em; // 480px
+$bpMed: 43.75em; // 700px
+$bpBig: 62.5em; // 1000px
+$bpHuge: 187.5em; // 3000px
+
+// Noise
+$noise: image-url('noise.png');

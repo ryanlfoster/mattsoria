@@ -1,0 +1,55 @@
+<section id="photography" class="section photo_section">
+  <div class="global_wrapper">
+    <h2 class="toggle">Photography</h2>
+    <ul class="grid play_grid hidden">
+      {{ entries:listing conditions="categories:photography" }}
+        <li class="one-third-left">
+          <a href="{{ url }}">
+            <img src="{{ image }}" data-original="{{ image }}" alt="{{ title }}" class="lazy" />
+            <div class="image_label">
+              <h3>{{ title }}</h3>
+            </div>
+          </a>
+        </li>
+        {{ /entries:listing }}
+    </ul>
+  </div>
+</section>
+<section id="illustration" class="section illustration_section">
+  <div class="global_wrapper">
+    <h2 class="toggle">Illustration</h2>
+    <ul class="grid play_grid hidden">
+      {{ entries:listing conditions="categories:illustration" }}
+        <li class="one-third-left">
+          <a href="{{ url }}">
+            {{ if thumbnail }}
+            <img src="{{ thumbnail }}" data-original="{{ thumbnail }}" alt="{{ title }}" class="lazy" />
+            {{ else }}
+            <img src="{{ image }}" data-original="{{ image }}" alt="{{ title }}" class="lazy" />
+            {{ endif }}
+            <div class="image_label">
+              <h3>{{ title }}</h3>
+            </div>
+          </a>
+        </li>
+        {{ /entries:listing }}
+    </ul>
+  </div>
+</section>
+<section id="web" class="section web_section">
+  <div class="global_wrapper">
+    <h2 class="toggle">Web</h2>
+    <ul class="grid play_grid hidden">
+      {{ entries:listing conditions="categories:web" }}
+        <li class="one-third-left">
+          <a href="{{ url }}">
+            <img src="{{ image }}" data-original="{{ image }}" alt="{{ title }}" class="lazy" />
+            <div class="image_label">
+              <h3>{{ title }}</h3>
+            </div>
+          </a>
+        </li>
+        {{ /entries:listing }}
+    </ul>
+  </div>
+</section>
