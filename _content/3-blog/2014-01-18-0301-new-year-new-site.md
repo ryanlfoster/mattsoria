@@ -42,4 +42,14 @@ Besides using Statamic, I employed the use of a few other new tools, like useing
 
 Aside from learning some new coding tricks, and trying out new approaches, I also just learned to let go of perfection, and to let my own site be a source of constant growth. I am pushing this site live knowing that there are still some things that need some work, and other things that might need to be reconsidered altogether - _but that's okay!_ I've decided that with my own site it doesn't _need_ to be perfect, and I can continue to work on it and change it as often as I like. It's optimistic to believe that I will continue to work on the site throughout this next year, but I've started out by making it much easier to do so by creating a well-organized code structure on top of an easy templating system.  
 
+### Critique and confidence
+I am putting this site up, and publishing this post, in a semi-nervous state. I'm nervous because I haven't subjected myself to much critique by my peers since the photography and art courses I took in college. But at the same time I remind myself that if there is only a single thing I'm confident about in this industry, it's this:
+#### I'm completely confident that I don't know all there is to know about any of what I'm doing, and I'm confident that I will always be open and eager to learn a better way to do something.
+In this way, even with a limited amount of knowledge and experience, I feel that I have an advantage over anyone who thinks they are an expert in this field of ever-changing technology. I don't ever want to assume I know all there is to know - about anything.
+
+I'm constantly learning, and I hope for this site to be a source of growth and discussion for myself and anyone else.  
+And on that note I hope that anyone reading this will  offer their thoughts, criticisms, or guidance on the design or code. I've put the code up in a [public Github repository](https://github.com/poopsplat/mattsoria), so feel free to check that out too.
+
+#### Happy New Year, and thank you.
+
 
