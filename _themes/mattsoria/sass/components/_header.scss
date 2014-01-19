@@ -46,10 +46,10 @@
             width: 100%;
             content: "";
             height: 3px;
-            background: $rgba;
             position: absolute;
             @include translateY(10px);
             @include border-radius(3px);
+            background: rgba(0,0,0,0.75);
             @include transition(opacity 0.3s ease 0s, transform 0.3s ease 0s);
           }
           &:hover, &:active, &:focus, &.current {

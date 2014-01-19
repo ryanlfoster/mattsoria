@@ -583,7 +583,7 @@ html {
 body {
   background: #262c2b;
   font-family: "europa", Helvetica, sans-serif;
-  background-image: url('../img/noise.png?1388062464');
+  background-image: url('../img/noise.png?1390027669');
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
@@ -842,14 +842,18 @@ section:after {
   visibility: hidden;
   font-size: 0;
 }
+/* line 10, ../sass/helpers/_grid.scss */
+.grid .grid_item {
+  text-align: center;
+}
 
-/* line 12, ../sass/helpers/_grid.scss */
+/* line 15, ../sass/helpers/_grid.scss */
 .one-half-right, .two-thirds-right, .one-third-right {
   margin-top: 1rem;
 }
 
 @media screen and (min-width: 43.75em) {
-  /* line 16, ../sass/helpers/_grid.scss */
+  /* line 19, ../sass/helpers/_grid.scss */
   .one-half-left {
     display: inline-block;
     width: 50% !important;
@@ -857,7 +861,7 @@ section:after {
     padding-right: 1rem;
   }
 
-  /* line 17, ../sass/helpers/_grid.scss */
+  /* line 20, ../sass/helpers/_grid.scss */
   .one-half-right {
     display: inline-block;
     width: 50% !important;
@@ -866,7 +870,7 @@ section:after {
     margin-top: 0;
   }
 
-  /* line 18, ../sass/helpers/_grid.scss */
+  /* line 21, ../sass/helpers/_grid.scss */
   .one-third-left {
     display: inline-block;
     width: 33.3333333% !important;
@@ -874,7 +878,7 @@ section:after {
     padding-right: 1rem;
   }
 
-  /* line 19, ../sass/helpers/_grid.scss */
+  /* line 22, ../sass/helpers/_grid.scss */
   .two-thirds-right {
     display: inline-block;
     width: 66.6666667% !important;
@@ -883,7 +887,7 @@ section:after {
     margin-top: 0;
   }
 
-  /* line 20, ../sass/helpers/_grid.scss */
+  /* line 23, ../sass/helpers/_grid.scss */
   .one-third-right {
     display: inline-block;
     width: 33.333333% !important;
@@ -892,7 +896,7 @@ section:after {
     margin-top: 0;
   }
 
-  /* line 21, ../sass/helpers/_grid.scss */
+  /* line 24, ../sass/helpers/_grid.scss */
   .two-thirds-left {
     display: inline-block;
     width: 66.6666667% !important;
@@ -1304,7 +1308,6 @@ pre.line-numbers > code {
   width: 100%;
   content: "";
   height: 3px;
-  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
@@ -1316,6 +1319,7 @@ pre.line-numbers > code {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+  background: rgba(0, 0, 0, 0.75);
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-transition-delay: 0s, 0s;
   -moz-transition: opacity 0.3s ease 0s, -moz-transform 0.3s ease 0s;
@@ -1336,7 +1340,7 @@ pre.line-numbers > code {
   z-index: 10;
   width: 100%;
   background: #262c2b;
-  background-image: url('../img/noise.png?1388062464');
+  background-image: url('../img/noise.png?1390027669');
   -webkit-box-shadow: 0 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
@@ -2489,7 +2493,7 @@ form textarea {
 }
 /* line 46, ../sass/pages/_project.scss */
 .project .main_section article img {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 /* line 49, ../sass/pages/_project.scss */
 .project .main_section article .featured_image {
@@ -2792,7 +2796,7 @@ form textarea {
   color: #4b5556;
   font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 /* line 85, ../sass/pages/_blog.scss */
 .blog article .post_content ul {
@@ -2814,38 +2818,19 @@ form textarea {
 .blog article .post_content a {
   color: #262c2b;
   position: relative;
+  white-space: nowrap;
+  text-decoration: underline;
+  -webkit-transition: text-shadow 0.3s ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: text-shadow 0.3s ease 0s;
+  -o-transition: text-shadow 0.3s ease 0s;
+  transition: text-shadow 0.3s ease 0s;
 }
-/* line 100, ../sass/pages/_blog.scss */
-.blog article .post_content a:after {
-  left: 0;
-  top: 100%;
-  opacity: 0;
-  width: 100%;
-  content: "";
-  height: 3px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  -o-transform: translateY(10px);
-  transform: translateY(10px);
-  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  -webkit-transition-delay: 0s, 0s;
-  -moz-transition: opacity 0.3s ease 0s, -moz-transform 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s, -o-transform 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+/* line 103, ../sass/pages/_blog.scss */
+.blog article .post_content a:hover, .blog article .post_content a:active, .blog article .post_content a:focus {
+  text-shadow: 1px 1px #ffda38;
 }
-/* line 113, ../sass/pages/_blog.scss */
-.blog article .post_content a:hover:after, .blog article .post_content a:active:after, .blog article .post_content a:focus:after {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  -o-transform: translateY(0px);
-  transform: translateY(0px);
-}
-/* line 119, ../sass/pages/_blog.scss */
+/* line 107, ../sass/pages/_blog.scss */
 .blog article .post_content blockquote {
   width: 100%;
   color: #262c2b;
@@ -2856,31 +2841,30 @@ form textarea {
   border-left: 6px solid #262c2b;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.25);
 }
-/* line 128, ../sass/pages/_blog.scss */
+/* line 116, ../sass/pages/_blog.scss */
 .blog article .post_content blockquote p {
   display: inline;
   font-size: 1.25rem;
 }
-/* line 133, ../sass/pages/_blog.scss */
+/* line 121, ../sass/pages/_blog.scss */
 .blog article .post_content blockquote footer cite {
   font-size: 1rem;
 }
-/* line 140, ../sass/pages/_blog.scss */
-.blog article .post_image {
+/* line 126, ../sass/pages/_blog.scss */
+.blog article .post_content .post_image {
   margin-bottom: 1rem;
 }
-/* line 142, ../sass/pages/_blog.scss */
-.blog article .post_image img {
+/* line 128, ../sass/pages/_blog.scss */
+.blog article .post_content .post_image img {
   margin: 0;
 }
-/* line 145, ../sass/pages/_blog.scss */
-.blog article .post_image figcaption {
+/* line 131, ../sass/pages/_blog.scss */
+.blog article .post_content .post_image figcaption {
   color: #7c7c7c;
-  margin: -0.5rem 0 0;
   padding: 0.25rem 0.5rem;
   background: rgba(0, 0, 0, 0.05);
 }
-/* line 154, ../sass/pages/_blog.scss */
+/* line 141, ../sass/pages/_blog.scss */
 .blog .post_comments {
   margin: 0 auto;
   max-width: 800px;
@@ -2889,18 +2873,18 @@ form textarea {
   border-top: 3px solid rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 43.75em) {
-  /* line 164, ../sass/pages/_blog.scss */
+  /* line 151, ../sass/pages/_blog.scss */
   .blog .featured_image img {
     top: -25%;
   }
 }
 
-/* line 173, ../sass/pages/_blog.scss */
+/* line 160, ../sass/pages/_blog.scss */
 .blog-post .recent_blogposts .grid {
   margin: 0 -1rem;
   width: calc(100% + 2rem);
 }
-/* line 177, ../sass/pages/_blog.scss */
+/* line 164, ../sass/pages/_blog.scss */
 .blog-post .recent_blogposts .blog_post {
   margin: 0;
   width: 100%;
@@ -2943,7 +2927,7 @@ form textarea {
 }
 /* line 27, ../sass/pages/_about.scss */
 .about .header_section {
-  background: url('../img/matt_soria.jpg?1388062464') center;
+  background: url('../img/matt_soria.jpg?1390027603') center;
 }
 /* line 29, ../sass/pages/_about.scss */
 .about .header_section h2 {

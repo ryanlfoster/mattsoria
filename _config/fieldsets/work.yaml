@@ -68,5 +68,6 @@ fields:
     destination: _themes/mattsoria/img/work
   content:
     type: redactor
+    image_dir: _themes/mattsoria/img/work
 
 hide: true

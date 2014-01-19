@@ -80,7 +80,7 @@
         color: $dark;
         font-size: $mid;
         line-height: 1.5;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
       ul {
         padding-left: 1rem;
@@ -97,23 +97,11 @@
       a {
         color: $black;
         position: relative;
-        &:after {
-          left: 0;
-          top: 100%;
-          opacity: 0;
-          width: 100%;
-          content: "";
-          height: 3px;
-          position: absolute;
-          background: $rgba;
-          @include translateY(10px);
-          @include transition(opacity 0.3s ease 0s, transform 0.3s ease 0s);
-        }
+        white-space: nowrap;
+        text-decoration: underline;
+        @include transition(text-shadow 0.3s ease 0s);
         &:hover, &:active, &:focus {
-          &:after {
-            opacity: 1;
-            @include translateY(0px);
-          }
+          @include text-shadow(1px 1px $base);
         }
       }
       blockquote {
@@ -135,20 +123,19 @@
           }
         }
       }
+      .post_image {
+        margin-bottom: 1rem;
+        img {
+          margin: 0;
+        }
+        figcaption {
+          color: $darkGray;
+          padding: 0.25rem 0.5rem;
+          background: rgba(0,0,0,0.05);
+        }
+      }
     }
 
-    .post_image {
-      margin-bottom: 1rem;
-      img {
-        margin: 0;
-      }
-      figcaption {
-        color: $darkGray;
-        margin: -0.5rem 0 0;
-        padding: 0.25rem 0.5rem;
-        background: rgba(0,0,0,0.05);
-      }
-    }
   }
 
   .post_comments {

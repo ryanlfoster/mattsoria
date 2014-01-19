@@ -18,6 +18,8 @@ fields:
     allowed: [jpg]
     destination: _themes/mattsoria/img/blog
   content:
-    type: markitup
+    display: Content
+    type: redactor
+    image_dir: _themes/mattsoria/img/blog
 
 hide: true

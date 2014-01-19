@@ -7,6 +7,9 @@ $padding: 1rem;
   width: 100%;
   display: block;
   @include clearfix();
+  .grid_item {
+    text-align: center;
+  }
 }
 
 .one-half-right, .two-thirds-right, .one-third-right  {margin-top: $margin;}

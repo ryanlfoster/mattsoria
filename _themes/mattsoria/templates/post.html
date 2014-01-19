@@ -4,7 +4,6 @@
         {{ if featured-image }}
         <div class="featured_image"><img src="{{ featured-image }}" /></div>
         {{ endif }}
-        <div class="global_wrapper">
           <article>
             <header class="post_header">
               <h2>{{ title }}</h2>
@@ -13,8 +12,10 @@
               {{ endif }}
               <div class="post_meta"><span class="post_date">published on {{ datestamp format="M jS, Y" }}</span><span class="read-time">about a <span class="eta"></span> read</span><span class="comment_count"><a href="{{ url }}#disqus_thread"></a></span><span class="post_category"><i class="icon-{{ categories_list }}"></i></span></div>
             </header>
-            <div class="post_content">
-              {{ content }}
+            <div class="global_wrapper">
+              <div class="post_content grid">
+                {{ content }}
+              </div>
             </div>
           </article>
           {{ if show_comments }}
@@ -22,7 +23,6 @@
             {{ disqus:comments account="{ disqus_account }" }}
           </div>
           {{ endif }}
-        </div>
       </section>
       <section class="section recent_blogposts">
         <div class="global_wrapper">

@@ -8,11 +8,11 @@ colophon: |
   
   This site was built in December, 2013, by me.
   
-  The fonts I used are [FF Tisa Pro](https://typekit.com/fonts/ff-tisa-web-pro) and [Europa](https://typekit.com/fonts/europa), and are hosted with [Typekit](https://typekit.com/).
+  The fonts I used are [Rooney Web](http://www.janfromm.de/typefaces/rooney/web/) and [Europa](http://www.europatype.com/articledetail/17), and are hosted with [Typekit](https://typekit.com/).
   
   The icons were generated using [Icomoon](http://icomoon.io).
   
-  I used [Sass](http://www.sass-lang.org) with [Compass](http://www.compass-style.org) to pre-process my css, and wrote the code in [Sublime Text 3](http://www.sublimetext.com).
+  I used [Sass](http://www.sass-lang.org) with [Compass](http://www.compass-style.org) to pre-process my css, and coded in [Sublime Text 3](http://www.sublimetext.com).
   
   I used [Grunt](http://www.grunt.js) to handle the automation of minifying and concatenating my js files, and image compression.
   
