@@ -1,0 +1,61 @@
+###########################################################################################
+#
+#  EXAMPLE RAVEN FORMSET
+#
+#  Formsets can override any default settings (raven.yaml) EXCEPT master_killswitch
+#
+###########################################################################################
+
+# Location (from root) to save form submissions
+submission_save_path: _forms/
+
+# Prefix your files with a string which are saved in the format:
+# YYYY-MM-DD-HH-MM-SS.yaml
+# file_prefix: contact
+
+# Prefix your files with a string which are saved in the format:
+# YYYY-MM-DD-HH-MM-SS.yaml
+# file_suffix: - {{ name }}
+
+# Fields allowed to be submitted in the form, automatically
+# purging anything and everything else
+allowed:
+  - name
+  - email
+  - message
+
+# You are not required to require fields, but once you do, any missing
+# from the POST will squash this submission and send a list of
+# missing fields to your {{ raven:errors }} tagpair
+required:
+  - name
+  - email
+  - message
+
+# Apply validation rules to specific fields. Refer to documentation
+# for a full list of available rules and their format
+validate:
+  name: alpha
+  email: email
+
+# Error messages can be mapped to your fields and passed to the
+# template upon failure. They will be available here:
+#
+# {{ raven:error }}
+#     {{ invalid }}
+#         {{ field }} : {{ message }}
+#     {{ /invalid }}
+# {{ /raven:error }}
+#
+messages:
+  name: "Your name needs to be made of letters."
+  email: "Are you sure that's a proper email address?"
+
+# Configure notification email
+email:
+  to: contact@mattsoria.com
+  from: {{ email }}
+  subject: {{ name }} filled out the contact form dude!
+  automagic: true
+  # html_template: html_email
+  # text_template: text_email

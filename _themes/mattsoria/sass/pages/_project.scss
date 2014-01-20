@@ -68,8 +68,11 @@
       width: calc(100% + 2rem);
     }
     .recent_work__item {
+      width: 100%;
       padding: 1rem;
       display: block;
+      margin: 0 auto;
+      max-width: 400px;
       position: relative;
       img {
         display: block;
@@ -103,6 +106,14 @@
             height: 1.5rem;
           }
         }
+      }
+    }
+  }
+
+  @include min-screen($bpMed) {
+    .recent_work {
+      .recent_work__item {
+        max-width: none;
       }
     }
   }

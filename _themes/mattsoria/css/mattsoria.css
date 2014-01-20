@@ -2308,6 +2308,16 @@ form input:hover, form input:focus, form input:active, form textarea:hover, form
 form textarea {
   margin-bottom: 1rem;
 }
+/* line 35, ../sass/components/_forms.scss */
+form .submit {
+  width: auto;
+  display: inline-block;
+}
+
+/* line 42, ../sass/components/_forms.scss */
+.error-block li {
+  color: #efecd2;
+}
 
 /* line 4, ../sass/pages/_home.scss */
 .home .intro {
@@ -2332,9 +2342,9 @@ form textarea {
 .home .recent_work .recent_work__item {
   width: 100%;
   padding: 1rem;
-  width: calc(100% + 2rem);
+  max-width: 400px;
+  margin: 1rem auto 0;
   background: rgba(0, 0, 0, 0);
-  margin: 1rem -1rem 0 -1rem;
   outline: 3px solid rgba(0, 0, 0, 0);
   -webkit-transition: background 0.3s ease, outline 0.3s ease;
   -webkit-transition-delay: 0s, 0s;
@@ -2376,6 +2386,14 @@ form textarea {
 /* line 51, ../sass/pages/_home.scss */
 .home .recent_work .recent_work__item .read_more {
   color: #262c2b;
+}
+@media screen and (min-width: 43.75em) {
+  /* line 59, ../sass/pages/_home.scss */
+  .home .recent_work .recent_work__item {
+    max-width: none;
+    margin: 1rem -1rem 0;
+    width: calc(100% + 2rem);
+  }
 }
 
 /* line 7, ../sass/pages/_work.scss */
@@ -2516,15 +2534,18 @@ form textarea {
 }
 /* line 70, ../sass/pages/_project.scss */
 .project .recent_work .recent_work__item {
+  width: 100%;
   padding: 1rem;
   display: block;
+  margin: 0 auto;
+  max-width: 400px;
   position: relative;
 }
-/* line 74, ../sass/pages/_project.scss */
+/* line 77, ../sass/pages/_project.scss */
 .project .recent_work .recent_work__item img {
   display: block;
 }
-/* line 77, ../sass/pages/_project.scss */
+/* line 80, ../sass/pages/_project.scss */
 .project .recent_work .recent_work__item .project_label {
   padding: 0.25rem;
   text-align: left;
@@ -2539,13 +2560,13 @@ form textarea {
   -o-transition: margin 0.3s ease 0s;
   transition: margin 0.3s ease 0s;
 }
-/* line 86, ../sass/pages/_project.scss */
+/* line 89, ../sass/pages/_project.scss */
 .project .recent_work .recent_work__item .project_label h3 {
   margin: 0;
   color: white;
   font-size: 1rem;
 }
-/* line 91, ../sass/pages/_project.scss */
+/* line 94, ../sass/pages/_project.scss */
 .project .recent_work .recent_work__item .project_label .sub_header {
   height: 0;
   color: #ffda38;
@@ -2557,13 +2578,19 @@ form textarea {
   -o-transition: height 0.3s ease 0s;
   transition: height 0.3s ease 0s;
 }
-/* line 100, ../sass/pages/_project.scss */
+/* line 103, ../sass/pages/_project.scss */
 .project .recent_work .recent_work__item:hover .project_label, .project .recent_work .recent_work__item:focus .project_label, .project .recent_work .recent_work__item:active .project_label {
   margin-top: -3.333333333rem;
 }
-/* line 102, ../sass/pages/_project.scss */
+/* line 105, ../sass/pages/_project.scss */
 .project .recent_work .recent_work__item:hover .project_label .sub_header, .project .recent_work .recent_work__item:focus .project_label .sub_header, .project .recent_work .recent_work__item:active .project_label .sub_header {
   height: 1.5rem;
+}
+@media screen and (min-width: 43.75em) {
+  /* line 115, ../sass/pages/_project.scss */
+  .project .recent_work .recent_work__item {
+    max-width: none;
+  }
 }
 
 /* line 4, ../sass/pages/_play.scss */
@@ -2851,20 +2878,24 @@ form textarea {
   font-size: 1rem;
 }
 /* line 126, ../sass/pages/_blog.scss */
+.blog article .post_content pre {
+  margin: 2rem 0;
+}
+/* line 129, ../sass/pages/_blog.scss */
 .blog article .post_content .post_image {
   margin-bottom: 1rem;
 }
-/* line 128, ../sass/pages/_blog.scss */
+/* line 131, ../sass/pages/_blog.scss */
 .blog article .post_content .post_image img {
   margin: 0;
 }
-/* line 131, ../sass/pages/_blog.scss */
+/* line 134, ../sass/pages/_blog.scss */
 .blog article .post_content .post_image figcaption {
   color: #7c7c7c;
   padding: 0.25rem 0.5rem;
   background: rgba(0, 0, 0, 0.05);
 }
-/* line 141, ../sass/pages/_blog.scss */
+/* line 144, ../sass/pages/_blog.scss */
 .blog .post_comments {
   margin: 0 auto;
   max-width: 800px;
@@ -2873,18 +2904,18 @@ form textarea {
   border-top: 3px solid rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 43.75em) {
-  /* line 151, ../sass/pages/_blog.scss */
+  /* line 154, ../sass/pages/_blog.scss */
   .blog .featured_image img {
     top: -25%;
   }
 }
 
-/* line 160, ../sass/pages/_blog.scss */
+/* line 163, ../sass/pages/_blog.scss */
 .blog-post .recent_blogposts .grid {
   margin: 0 -1rem;
   width: calc(100% + 2rem);
 }
-/* line 164, ../sass/pages/_blog.scss */
+/* line 167, ../sass/pages/_blog.scss */
 .blog-post .recent_blogposts .blog_post {
   margin: 0;
   width: 100%;

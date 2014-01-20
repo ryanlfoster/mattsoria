@@ -19,9 +19,9 @@
     .recent_work__item {
       width: 100%;
       padding: 1rem;
-      width: calc(100% + 2rem);
+      max-width: 400px;
+      margin: 1rem auto 0;
       background: rgba(0,0,0,0);
-      margin:  1rem -1rem 0 -1rem;
       outline: 3px solid rgba(0,0,0,0);
       @include transition(background 0.3s ease 0s, outline 0.3s ease 0s);
       &:hover, &:focus, &:active {
@@ -50,6 +50,16 @@
       }
       .read_more {
         color: $black;
+      }
+    }
+  }
+
+  @include min-screen($bpMed) {
+    .recent_work {
+      .recent_work__item {
+        max-width: none;
+        margin:  1rem -1rem 0;
+        width: calc(100% + 2rem);
       }
     }
   }

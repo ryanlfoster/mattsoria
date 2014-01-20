@@ -32,7 +32,14 @@ form {
     margin-bottom: 1rem;
   }
 
-  @include min-screen($bpMed) {
+  .submit {
+    width: auto;
+    display: inline-block;
+  }
+}
 
+.error-block {
+  li {
+    color: $light;
   }
 }
