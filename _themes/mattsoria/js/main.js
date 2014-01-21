@@ -81,7 +81,7 @@ var Main = (function ($) {
 			Grid.init();
     },
     lazyLoader: function () {
-    	$("img.lazy").lazyload({
+    	$("img.lazy, .project_screenshots p img").lazyload({
 			  effect : "fadeIn"
 			});
     },

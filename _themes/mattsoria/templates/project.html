@@ -16,7 +16,27 @@
               </noscript>
             </span>
           </div>
-        {{ content }}
+          <div class="project_details">
+            <div class="grid">
+              <div class="grid_item one-half-left">
+                <h3>about</h3>
+                {{ about }}
+              </div>
+              <div class="grid_item one-half-right">
+                <h3>my role</h3>
+                {{ role }}
+              </div>          
+            </div>
+<!--             {{ if features }}
+              <div class="project_features">
+                <h3>technologies:</h3>
+                {{ features }}
+              </div>
+            {{ endif }} -->
+          </div>
+          <div class="project_screenshots">
+            {{ content }}
+          </div>
       </article>
     </div>
   </section>

@@ -66,6 +66,17 @@ fields:
     allowed: [jpg, png]
     required: true
     destination: _themes/mattsoria/img/work
+  features:
+    display: Features
+    type: redactor
+  about:
+    display: About the project
+    required: true
+    type: redactor
+  role:
+    display: My role in the project
+    required: true
+    type: redactor
   content:
     type: redactor
     image_dir: _themes/mattsoria/img/work

@@ -17,10 +17,10 @@
       color: $black;
     }
     .recent_work__item {
-      width: 100%;
       padding: 1rem;
       max-width: 400px;
-      margin: 1rem auto 0;
+      margin: 1rem -1rem 0;
+      width: calc(100% + 2rem);
       background: rgba(0,0,0,0);
       outline: 3px solid rgba(0,0,0,0);
       @include transition(background 0.3s ease 0s, outline 0.3s ease 0s);
