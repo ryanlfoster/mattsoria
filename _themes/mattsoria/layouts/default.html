@@ -22,15 +22,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{ _site_name }}</title>
     <link rel="canonical" href="" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@you" />
-    <meta name="twitter:creator" content="@you" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
+    <meta name="description" content="The online internet website of Web Dood, Illustrationist, and Happy Person, Matt Soria." />
+    <meta name="keywords" content="matt soria, web, design, tutorials, blog, art, illustration, illustrationist, development, frontend, front-end, freelance, digital nomad, photography, photographer, chicago, valparaiso, code, html, css, coder, writer, web industry" />
+    <meta property="og:title" content="Matt Soria &#8226; Web Dood, Illustrationist, Happy Person." />
+    <meta property="og:description" content="The online internet website of Web Dood, Illustrationist, and Happy Person, Matt Soria." />
+    <meta name="twitter:card" content="The online internet website of Web Dood, Illustrationist, and Happy Person, Matt Soria." />
+    <meta name="twitter:site" content="@poopsplat" />
+    <meta name="twitter:creator" content="@poopsplat" />
+    <meta name="twitter:title" content="Matt Soria &#8226; Web Dood, Illustrationist, Happy Person." />
+    <meta name="twitter:description" content="The online internet website of Web Dood, Illustrationist, and Happy Person, Matt Soria." />
     <meta name="twitter:image" content="{{ theme:img src="favicon.png" }}" />
 
     <link rel="shortcut icon" type="image/ico" href="favicon.png" />
@@ -40,6 +40,9 @@
     <script src="{{ theme:js src="libs/modernizr.custom.js" }}"></script>
   </head>
   <body class="{{ title|lower|slugify }}">
+    {{ if {raven:success} }}
+      <h3 class="form_success animated fadeInDownBig">Right on! Form sent - I'll get back to you soon! <i class="icon-close"></i></h3>
+    {{ endif }}
     <header class="main_header" role="banner">
         <h1><a href="{{ homepage }}">m<span class="mmmatt-a">a</span>tT sor<span class="mmmatt-i">i</span>A</a></h1>
 	   {{ theme:partial src="nav" }}

@@ -1,6 +1,7 @@
 // Animations
 
-.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1.5s;-moz-animation-duration:1.5s;-ms-animation-duration:1.5s;-o-animation-duration:1.5s;animation-duration:1.5s;}.animated.hinge{-webkit-animation-duration:1.5s;-moz-animation-duration:1.5s;-ms-animation-duration:1.5s;-o-animation-duration:1.5s;animation-duration:1.5s;}@-webkit-keyframes fadeInDownBig {
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1.5s;-moz-animation-duration:1.5s;-ms-animation-duration:1.5s;-o-animation-duration:1.5s;animation-duration:1.5s;}.animated.hinge{-webkit-animation-duration:1.5s;-moz-animation-duration:1.5s;-ms-animation-duration:1.5s;-o-animation-duration:1.5s;animation-duration:1.5s;}
+@-webkit-keyframes fadeInDownBig {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -51,4 +52,42 @@
   -moz-animation-name: fadeInDownBig;
   -o-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
+}
+
+@-webkit-keyframes fadeAway {
+  0% {
+    opacity: 1;
+  } 100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
 }

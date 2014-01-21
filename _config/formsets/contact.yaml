@@ -54,7 +54,7 @@ messages:
 # Configure notification email
 email:
   to: contact@mattsoria.com
-  from: {{ email }}
+  from: "{{ email }}"
   subject: {{ name }} filled out the contact form dude!
   automagic: true
   # html_template: html_email

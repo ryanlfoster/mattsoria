@@ -1,6 +1,4 @@
-{{ if raven:success }}
-  <h3>Thanks! I'll try to get back to you soon.</h3>
-{{ endif }}
+{{ if {raven:has_errors} }}
 
 {{ raven:errors }}
     
@@ -27,6 +25,8 @@
   {{ endif }}
 
 {{ /raven:errors }}
+
+{{ endif }}
 
 {{ raven:form formset="contact" }}
   <div class="js-float-label-wrapper">

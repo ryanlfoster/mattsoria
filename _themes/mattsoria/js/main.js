@@ -93,6 +93,11 @@ var Main = (function ($) {
         $(this).closest('section').toggleClass('toggled');
     	})
     },
+    formSuccess: function () {
+      $('.form_success i').on('click', function () {
+        $(this).closest('h3').hide();
+      });
+    },
 		initMain: function () {
 			$(document).ready(function () {
 				Main.stickyNav();
@@ -106,6 +111,7 @@ var Main = (function ($) {
 				Main.gridExpander();
 				Main.lazyLoader();
 				Main.playSections();
+        Main.formSuccess();
 			})	
 		}
 	};

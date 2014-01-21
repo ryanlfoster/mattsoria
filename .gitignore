@@ -6,8 +6,9 @@ node_modules
 _config/users
 _config/settings.yaml
 _themes/mattsoria/img
-_cache
-_content
-_logs
+_cache/
+_content/
+_logs/
 _themes/denali
-assets
+assets/
+_forms/

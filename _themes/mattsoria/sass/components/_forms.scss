@@ -38,6 +38,38 @@ form {
   }
 }
 
+#contact {
+  h3 {
+    color: $light;
+    margin-bottom: 1rem;
+  }
+}
+
+.form_success {
+  width: 100%;
+  z-index: 30;
+  color: $black;
+  padding: 1rem;
+  position: fixed;
+  text-align: center;
+  font-family: $bold;
+  background: rgba(99,214,126,0.90);
+  i {
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 0.75rem;
+    display: inline-block;
+    @include vendor(animation, fadeAway 4s);
+    @include transition(transform 0.3s ease 0s);
+    &:hover, &:focus {
+      @include translateY(-1px);
+    }
+    &:active {
+      @include translateY(2px);
+    }
+  }
+}
+
 .error-block {
   li {
     color: $light;
