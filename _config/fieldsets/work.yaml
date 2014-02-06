@@ -25,7 +25,7 @@ fields:
     required: true
     destination: _themes/mattsoria/img/work
   largethumbnail:
-    display: Thumbnail
+    display: Large Thumbnail
     type: file
     allowed: [jpg, png]
     required: true

@@ -230,8 +230,8 @@ AddDefaultCharset utf-8
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
 
 # ------------------------------------------------------------------------------
 # | Rewrite engine                                                             |
@@ -401,6 +401,16 @@ RewriteRule ^(.*)$ $1.php
 # ##############################################################################
 # # WEB PERFORMANCE                                                            #
 # ##############################################################################
+
+# ------------------------------------------------------------------------------
+# | Accept-Encoding                                                                |
+# ------------------------------------------------------------------------------
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
 
 # ------------------------------------------------------------------------------
 # | Compression                                                                |

@@ -2,6 +2,7 @@
 
 .recent_blogposts {
   background-color: $base;
+  background-image: $noise;
   .blog_post {
     width: 100%;
     padding: 1rem;
@@ -34,7 +35,7 @@
       font-weight: $medium;
     }
     p {
-      color: $black;
+      color: $dark;
       margin-bottom: 0;
     }
     .post_meta {

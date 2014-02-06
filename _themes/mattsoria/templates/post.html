@@ -10,7 +10,7 @@
               {{ if subtitle }}
               <div class="post_subtitle">{{ subtitle }}</div>
               {{ endif }}
-              <div class="post_meta"><span class="post_date">published on {{ datestamp format="M jS, Y" }}</span><span class="read-time">about a <span class="eta"></span> read</span><span class="comment_count"><a href="{{ url }}#disqus_thread"></a></span><span class="post_category"><i class="icon-{{ categories_list }}"></i></span></div>
+              <div class="post_meta"><span class="post_date">published on {{ datestamp format="M jS, Y" }}</span><span class="read-time">about a <span class="eta"></span> read</span><span class="comment_count"><a href="{{ url }}#disqus_thread"></a></span><span class="post_category"><i class="icon-{{ if categories }}{{ categories_list }}{{ else }}uncategorized{{ endif }}"></i></span></div>
             </header>
             <div class="global_wrapper">
               <div class="post_content grid">

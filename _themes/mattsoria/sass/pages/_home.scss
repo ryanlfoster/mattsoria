@@ -2,10 +2,12 @@
 
 .home {
   .intro {
-    padding: 1rem;
-    background: $black;
+    padding: 2rem;
+    background: $base;
+    background-image: $noise;
     h2 {
-      color: $base;
+      color: $black;
+      margin-bottom: 0;
       text-align: center;
       font-weight: $medium;
     }
@@ -13,6 +15,7 @@
 
   .recent_work {
     background-color: $light;
+    background-image: $noise;
     h2 {
       color: $black;
     }

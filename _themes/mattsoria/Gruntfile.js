@@ -19,11 +19,22 @@ module.exports = function(grunt) {
         }]
       }
     },
+    watch: {
+      all: {
+        files: ['js/*.js'],
+        tasks: ['uglify'],
+      },
+      options: {
+        spawn: false,
+      },
+    },
   });
 
   require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-uncss');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'imagemin']);
+  grunt.registerTask('default', ['watch', 'uglify', 'imagemin']);
 
 };

@@ -23,5 +23,6 @@ fields:
     destination: _themes/mattsoria/img/play
   content:
     type: redactor
+    image_dir: _themes/mattsoria/img/blog
 
 hide: true

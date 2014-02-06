@@ -45,7 +45,7 @@ cleanup: true
 convertLinks: true
 
 # Automatically replace divs with paragraphs
-convertDivs: true
+convertDivs: false
 
 # Turn on email tab in link modal window
 linkEmail: true
@@ -66,6 +66,8 @@ formattingTags:
   - h2
   - h3
   - h4
+  - h5
+  - h6
 
 plugins:
   - fullscreen

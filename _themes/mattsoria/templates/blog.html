@@ -7,7 +7,7 @@
           <a href="{{ url }}" class="blog_post grid">
             <div class="one-third-left">
               <h3>{{ title }}</h3>
-              <div class="post_meta"><span class="post_date">{{ datestamp format="M jS, Y" }}</span><span class="post_category"><i class="icon-{{ categories_list }}"></i></span></div>
+              <div class="post_meta"><span class="post_date">{{ datestamp format="M jS, Y" }}</span><span class="post_category"><i class="icon-{{ if categories }}{{ categories_list }}{{ else }}uncategorized{{ endif }}"></i></span></div>
             </div>
             <div class="two-thirds-right">
               <p>{{ summary }} <span class="read_more">Read more<i class="icon-arrow-right"></i></span></p>
