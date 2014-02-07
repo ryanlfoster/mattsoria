@@ -5,10 +5,6 @@ node_modules
 .DS_Store
 _config/users
 _config/settings.yaml
-_themes/mattsoria/img
-_cache/
-_content/
 _logs/
 _themes/denali
-assets/
 _forms/
