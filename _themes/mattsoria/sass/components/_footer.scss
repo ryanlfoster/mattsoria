@@ -1,8 +1,8 @@
 // Footer
 
-.main_footer {
+.footer_main {
   @include clearfix();
-  padding: 2rem 0 4rem;
+  padding: 2rem 2rem 4rem;
   h2 {
     color: $base;
     font-weight: $medium;
@@ -123,38 +123,24 @@
   }
 
 
-  @include min-screen($bpSmall) {
-    
-    .footer_main {
+  @include min-screen($bpSmall) { 
+
       padding: 3rem;
-    }
 
   }
 
   @include min-screen($bpMed) {
 
-    .footer_main {
       padding: 4rem;
       .availability {
         text-align: right;
       }
-    }
-
-  }
-
-  @include min-screen($bpBig) {
-
-    html {
-      font-size: 18px
-    }
 
   }
 
   @include min-screen($bpHuge) {
 
-    .footer_main {
       padding: 5rem;
-    }
 
   }
 }
