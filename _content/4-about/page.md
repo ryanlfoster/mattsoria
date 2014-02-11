@@ -14,9 +14,9 @@ colophon: |
   
   I used [Sass](http://www.sass-lang.org) with [Compass](http://www.compass-style.org) to pre-process my css, and coded in [Sublime Text 3](http://www.sublimetext.com).
   
-  I used [Grunt](http://www.grunt.js) to handle the automation of minifying and concatenating my js files, and image compression.
-  
-  The site is running on [Statamic](http://www.statamic.com), a static site generator.
+  The site is running on [Statamic](http://www.statamic.com), an awesome, dynamic flat-file CMS built on PHP.
+
+  I use [Deploy](http://www.deployhq.com) to handle deployment from Github.
   
   I have put the site's code on a [public Github repo](https://github.com/poopsplat/mattsoria), so feel free to take a look, and make suggestions.
 availability: unavailable
