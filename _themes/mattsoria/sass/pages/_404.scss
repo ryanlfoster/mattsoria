@@ -1,0 +1,15 @@
+// 404
+
+.fourohfour {
+  section {
+    color: $light;
+    min-height: 600px;
+    background: image-url('2001_404.jpg') no-repeat center left fixed;
+    h1, h2 {
+      text-align: center;
+      a {
+        color: $base;
+      }
+    }
+  }
+}

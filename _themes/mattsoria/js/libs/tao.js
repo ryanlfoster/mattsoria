@@ -348,7 +348,7 @@ var passages = [
 "The great Way is easy, yet people prefer the side paths.",
 "Be aware when things are out of balance.",
 "Stay centered within the Tao.",
-"When rich speculators prosper; While farmers lose their land; when government officials spend money on weapons instead of cures; when the upper class is extravagant and irresponsible while the poor have nowhere to turn- ","all this is robbery and chaos.",
+"When rich speculators prosper; While farmers lose their land; when government officials spend money on weapons instead of cures; when the upper class is extravagant and irresponsible while the poor have nowhere to turn - all this is robbery and chaos.",
 "It is not in keeping with the Tao.",
 "Whoever is planted in the Tao will not be rooted up.",
 "Whoever embraces the Tao will not slip away.",
