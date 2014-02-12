@@ -3,7 +3,7 @@ node_modules
 *.sublime-project
 *.sublime-workspace
 .DS_Store
-_cache/
+_cache/_app/content/*
 _config/users
 _config/settings.yaml
 _logs/
