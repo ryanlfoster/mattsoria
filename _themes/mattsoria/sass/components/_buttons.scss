@@ -16,6 +16,9 @@
     margin-bottom: 1px;
     @include translateY(1px);
     border-bottom: 5px solid $rgba;
+    &:before, &:after {
+      display: none;
+    }
   }
   &:active {
     margin-bottom: 3px;
