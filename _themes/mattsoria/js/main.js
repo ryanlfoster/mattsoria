@@ -111,7 +111,7 @@ var Main = (function ($) {
     footerBackground: function () {
       var randomImages = ['hero_1','hero_2','hero_3','hero_4','hero_5']; 
       var rndNum = Math.floor(Math.random() * randomImages.length); 
-      $(".tao_footer").css({ background: "url(/_themes/mattsoria/img/footer/" + randomImages[rndNum] + ".jpg) no-repeat center center fixed" });
+      $(".tao_footer").css({ background: "url(/_themes/mattsoria/img/footer/" + randomImages[rndNum] + ".jpg) no-repeat fixed center center", background-size: "cover" });
     },
 		initMain: function () {
 			$(document).ready(function () {
