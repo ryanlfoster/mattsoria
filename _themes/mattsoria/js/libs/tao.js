@@ -108,7 +108,7 @@ var passages = [
 "If you don't realize the source, you stumble in confusion and sorrow.",
 "When you realize where you come from, you naturally become tolerant, disinterested, amused, kindhearted as a grandmother, dignified as a king.",
 "Immersed in the wonder of the Tao, you can deal with whatever life brings you, and when death comes, you are ready.",
-"When the Master governs, the peopleare hardly aware that he exists.",
+"When the Master governs, the people are hardly aware that he exists.",
 "Next best is a leader who is loved. Next, one who is feared. The worst is one who is despised.",
 "If you don't trust the people, you make them untrustworthy.",
 "The Master doesn't talk, he acts. When his work is done, the people say, 'Amazing: we did it, all by ourselves!'",
