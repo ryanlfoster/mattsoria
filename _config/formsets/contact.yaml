@@ -37,6 +37,7 @@ required:
 validate:
   name: alpha
   email: email
+  Gotcha: length: - 0 - 0
 
 # Error messages can be mapped to your fields and passed to the
 # template upon failure. They will be available here:
