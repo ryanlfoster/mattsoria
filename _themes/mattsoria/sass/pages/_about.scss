@@ -25,7 +25,8 @@
     }
   }
   .header_section {
-    background: image-url('photobooth.jpg') -45px center;
+    @include at2x('photobooth', 813px, 275px, '.jpg');
+    background-position: -45px center;
     h2 {
       margin: 0;
       font-size: $huge;

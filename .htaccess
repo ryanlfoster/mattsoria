@@ -16,7 +16,7 @@ RewriteRule ^(.*/)?\.git+ - [F,L]
 # This will prevent all .html files from being accessed.
 # You may want to remove this line if you want to serve
 # static files outside of Statamic
-RewriteRule ^(.*)?\.html$ - [F,L]
+# RewriteRule ^(.*)?\.html$ - [F,L]
 
 # Remove trailing slashes from your URL
 RewriteCond %{REQUEST_FILENAME} !-d
