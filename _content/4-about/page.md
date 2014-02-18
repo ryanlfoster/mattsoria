@@ -15,12 +15,13 @@ colophon: |
   I used [Sass](http://www.sass-lang.org) with [Compass](http://www.compass-style.org) to pre-process my css, and coded in [Sublime Text 3](http://www.sublimetext.com).
   
   The site is running on [Statamic](http://www.statamic.com), an awesome, dynamic flat-file CMS built on PHP.
-
+  
   I use [Deploy](http://www.deployhq.com) to handle deployment from Github.
   
   I have put the site's code on a [public Github repo](https://github.com/poopsplat/mattsoria), so feel free to take a look, and make suggestions.
 availability: unavailable
 maincontent: ""
+availability-text: "Sorry, I'm not available for freelance work right now!"
 ---
 ### I'm a Web Designer & Front-end Developer, artist, and an **idealist**.
 ### I enjoy working on projects that are **fun** and **challenging**.

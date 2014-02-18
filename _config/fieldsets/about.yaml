@@ -8,6 +8,9 @@ fields:
     options: 
       - available
       - unavailable
+  availability-text:
+    display: Availability Text
+    type: text
   maincontent:
     display: Main Content
     required: true
