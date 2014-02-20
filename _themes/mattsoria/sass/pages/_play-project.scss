@@ -1,0 +1,27 @@
+// Play Project
+
+.play_item {
+  .global_wrapper {
+    max-width: 800px;
+  }
+  h4, h5, h6 {
+    color: $dark;
+    font-size: $mid;
+    margin: 0 0 1rem;
+    line-height: 1.25;
+    font-family: $serif;
+  }
+  p {
+    text-align: left;
+    .btn {
+
+    }
+  }
+  ul {
+    text-align: left;
+    padding-left: 1em;
+    li {
+      list-style-type: disc;
+    }
+  }
+}

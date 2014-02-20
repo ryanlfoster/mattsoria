@@ -28,17 +28,6 @@
   }
 }
 
-@mixin clearfix {
-  &:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-    font-size: 0;
-  }
-}
-
 // Easy vendor prefixes (used with properties unsupported by compass)
 @mixin vendor-prefix($name, $argument) {
   #{$name}: $argument;

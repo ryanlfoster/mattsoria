@@ -21,8 +21,8 @@ module.exports = function(grunt) {
     },
     watch: {
       all: {
-        files: ['js/*.js'],
-        tasks: ['uglify'],
+        files: ['js/libs/*.js', 'js/main.js', 'images/*.{png,jpg,gif}'],
+        tasks: ['uglify', 'imagemin'],
       },
       options: {
         spawn: false,
