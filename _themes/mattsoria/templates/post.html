@@ -11,6 +11,9 @@
               <div class="post_subtitle">{{ subtitle }}</div>
               {{ endif }}
               <div class="post_meta"><span class="post_date">published on {{ datestamp format="M jS, Y" }}</span><span class="read-time">about a <span class="eta"></span> read</span><span class="comment_count"><a href="{{ url }}#disqus_thread"></a></span><span class="post_category"><i class="icon-{{ if categories }}{{ categories_list }}{{ else }}uncategorized{{ endif }}"></i></span></div>
+              <div class="tweet">
+                <a class="btn" href="https://twitter.com/share?url={{ current_url }}&text={{ title }}&via=poopsplat" onclick="return popitup('https://twitter.com/share?url={{ current_url }}&text={{ title }}&via=poopsplat')">tweet</a>
+              </div>
             </header>
             <div class="global_wrapper">
               <div class="post_content grid">

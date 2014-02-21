@@ -20,17 +20,17 @@
 
   article {
     .post_header {
-      background: $base;
       text-align: center;
       margin-bottom: 4rem;
+      background: $highlight;
       padding: 1rem 1rem 2rem;
       margin: -2rem -2rem 4rem;
       width: calc(100% + 4rem);
       h2 {
         color: $black;
-        font-size: $big;
+        line-height: 1;
+        font-size: $med;
         margin: 0 0 1rem;
-        line-height: 1.5;
         @include text-shadow(1px 1px $rgba);
       }
       .post_subtitle {
@@ -61,6 +61,13 @@
             margin-right: 0.5rem;
             display: inline-block;
           }
+        }
+      }
+      .tweet {
+        margin-top: 1rem;
+        .btn {
+          color: $highlight;
+          background: $dark;
         }
       }
     }
@@ -150,6 +157,13 @@
   }
 
   @include min-screen($bpMed) {
+    article {
+      .post_header {
+        h2 {
+          font-size: $big;
+        }
+      }
+    }
     .featured_image {
       img {
         top: -25%;

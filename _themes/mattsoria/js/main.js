@@ -111,7 +111,7 @@ var Main = (function ($) {
     footerBackground: function () {
       var randomImages = ['hero_1','hero_2','hero_3','hero_4','hero_5']; 
       var rndNum = Math.floor(Math.random() * randomImages.length); 
-      $(".tao_footer").css({ background: "url(/_themes/mattsoria/img/footer/" + randomImages[rndNum] + ".jpg) no-repeat fixed center center", background-size: "cover" });
+      $(".tao_footer").css({ 'background': "url(/_themes/mattsoria/img/footer/" + randomImages[rndNum] + ".jpg) no-repeat fixed center center", 'background-size': "cover" });
     },
 		initMain: function () {
 			$(document).ready(function () {
@@ -136,3 +136,12 @@ var Main = (function ($) {
 })(jQuery);
 
 Main.initMain();
+
+// Utility JS
+function popitup(url, title, w, h) {
+  var left = (screen.width/2)-(500/2);
+  var top = (screen.height/2)-(200/2);
+  newwindow=window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=500, height=240, top='+top+', left='+left);
+  if (window.focus) {newwindow.focus()}
+  return false;
+}

@@ -54,7 +54,7 @@ p {
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1"; // http://blog.typekit.com/2014/02/05/kerning-on-the-web/
   a {
-    color: $base;
+    color: $highlight;
     &:active {
       outline: 1px dotted;
     }

@@ -5,10 +5,9 @@
   width: 100%;
   display: table;
   max-width: none;
+  background: $base;
   position: relative;
   height: calc(100% - 65px);
-  background: image-url('footer/hero_1.jpg') no-repeat center center fixed;
-  background-size: cover;
   &:before {
     top: 0.5rem;
     content: '';
@@ -18,7 +17,7 @@
     position: absolute;
     border: 3px solid $rgba;
     width: calc(100% - 1rem);
-    height: calc(100% - 1rem -65px);
+    height: calc(100% - 1rem);
   }
   #tao {
     width: 100%;
@@ -28,10 +27,11 @@
     vertical-align: middle;
     p {
       font-size: $med;
+      color: $highlight;
       font-weight: $thin;
       font-style: italic;
       font-family: $serif;
-      color: rgba(0,0,0,0.50);
+      @include text-shadow(1px 1px rgba(0,0,0,0.50));
     }
     cite {
       color: rgba(0,0,0,0.40);

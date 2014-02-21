@@ -37,9 +37,15 @@
   }
   &.play_item--photography {
     background: $white;
+    p {
+      text-align: center;
+    }
   }
   &.play_item--illustration {
     background: $lightGray;
+    p {
+      text-align: center;
+    }
   }
   &.play_item--web {
     background: $light;

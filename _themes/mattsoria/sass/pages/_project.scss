@@ -4,7 +4,7 @@
   .main_section {
     background: $white;
     h2 {
-      color: $base;
+      color: $highlight;
       @include text-shadow(1px 1px $dark);
       .visit_site {
         color: $dark;
