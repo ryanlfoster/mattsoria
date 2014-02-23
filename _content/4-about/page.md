@@ -22,6 +22,11 @@ colophon: |
 availability: unavailable
 maincontent: ""
 availability-text: "Sorry, I'm not available for freelance work right now!"
+seo-title:
+  seo-title: 'Matt Soria &#8226; About'
+  seo-description: "I'm a Web Designer & Front-end Developer, Illustrator, and Photographer from Chicago, IL, living and working in Valparaiso, Chile."
+seo-keywords: ""
+seo-description: "I'm a Web Designer & Front-end Developer, Illustrator and Photographer from Chicago, IL, living and working in Valparaiso, Chile."
 ---
 ### I'm a Web Designer & Front-end Developer, artist, and an **idealist**.
 ### I enjoy working on projects that are **fun** and **challenging**.

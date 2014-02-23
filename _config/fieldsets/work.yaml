@@ -1,4 +1,12 @@
+include:
+  - seo
+
 fields:
+  seo-title:
+    display: SEO fields
+    required: false
+    default:
+    type: seo
   _template:
     display: Template
     type: templates

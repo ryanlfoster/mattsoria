@@ -27,11 +27,11 @@ main {
 
 ::selection {
   color: $black;
-  background: $base;
+  background: $highlight;
   }
 ::-moz-selection {
   color: $black;
-  background: $base;
+  background: $highlight;
 }
 
 a {

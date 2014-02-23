@@ -5,6 +5,9 @@ categories:
   - github
 summary: 'Every time I need to do this I have to google it, so I'm sharing the answer, and committing it to memory.'
 featured-image: ""
+seo-keywords: git, github, pull, branch, feature, remote, locally
+seo-description: >
+  Every time I need to pull down a feature branch to work on locally in Git I have to google it, so I'm sharing the answer, and committing it to memory.
 ---
 <p>I wanted to archive this on my blog because it's something I don't do every day, but every couple weeks or so I need to, and every time I need to do it I have to google it.</p>
 <p>So you are working on a github repo collaboratively, and a co-worker or friend creates a new branch to work on a feature, and you need to do some work on it. So how do you pull it down to work on locally?</p>

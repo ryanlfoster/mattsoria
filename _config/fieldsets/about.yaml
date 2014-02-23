@@ -1,5 +1,8 @@
 title: About Page
 
+include:
+  - seo
+
 fields:
 
   availability:
@@ -8,17 +11,16 @@ fields:
     options: 
       - available
       - unavailable
+
   availability-text:
     display: Availability Text
     type: text
-  maincontent:
-    display: Main Content
-    required: true
-    type: markitup
+
   content:
     display: About Me Content
     required: true
     type: markitup
+
   colophon:
     display: About Site Content
     required: true

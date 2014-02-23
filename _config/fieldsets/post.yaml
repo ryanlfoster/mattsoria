@@ -1,3 +1,6 @@
+include:
+  - seo
+
 fields:
   subtitle:
     display: Subtitle
