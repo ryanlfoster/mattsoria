@@ -48,11 +48,11 @@ p {
   line-height: 1.5;
   font-size: $small;
   font-family: $serif;
-  text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1"; // http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+  -webkit-font-feature-settings: "kern";
   a {
     color: $highlight;
     &:active {
@@ -85,11 +85,11 @@ hr {
 h1, h2 {
   color: $white;
   font-weight: $bold;
-  text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1"; // http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+  -webkit-font-feature-settings: "kern";
   @include text-shadow(1px 1px $rgba);
   .sub_header {
     display: block;
@@ -125,7 +125,6 @@ section {
   overflow: hidden;
   position: relative;
   @include clearfix();
-  // background-image: $noise;
 }
 
 .screen-reader-text {
