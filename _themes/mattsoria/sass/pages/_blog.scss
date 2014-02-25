@@ -73,21 +73,21 @@
     }
 
     .post_content {
-      color: $black;
       margin: 0 auto;
       max-width: 800px;
+      color: $black;
       font-family: $serif;
       h3 {
+        margin: 2rem 0 1rem;
         color: $black;
         font-size: $med;
         font-family: $sans;
-        margin: 2rem 0 1rem;
       }
       h4, h5, h6 {
+        margin-bottom: 1rem;
         color: $dark;
         font-size: $mid;
         line-height: 1.5;
-        margin-bottom: 1rem;
       }
       ul {
         padding-left: 1rem;
@@ -102,24 +102,24 @@
         margin: 1rem auto;
       }    
       a {
-        color: $black;
-        position: relative;
-        white-space: nowrap;
-        text-decoration: underline;
         @include transition(text-shadow 0.3s ease 0s);
+        position: relative;
+        color: $black;
+        text-decoration: underline;
+        white-space: nowrap;
         &:hover, &:active, &:focus {
           @include text-shadow(1px 1px $base);
         }
       }
       blockquote {
-        width: 100%;
-        color: $black;
-        margin: 2rem 0;
-        background: $base;
-        font-style: italic;
-        padding: 0.5rem 2rem;
-        border-left: 6px solid $black;
         @include text-shadow(1px 1px rgba(255,255,255,0.25));
+        margin: 2rem 0;
+        padding: 0.5rem 2rem;
+        width: 100%;
+        border-left: 6px solid $black;
+        background: $base;
+        color: $black;
+        font-style: italic;
         p {
           display: inline;
           font-size: $mid;
@@ -139,9 +139,9 @@
           margin: 0;
         }
         figcaption {
-          color: $darkGray;
           padding: 0.25rem 0.5rem;
           background: rgba(0,0,0,0.05);
+          color: $darkGray;
         }
       }
     }
