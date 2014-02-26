@@ -5,6 +5,10 @@ include:
 
 fields:
 
+  currentlocation:
+    display: Current Location
+    type: text
+
   availability:
     display: Availability
     type: select
@@ -12,12 +16,22 @@ fields:
       - available
       - unavailable
 
-  availability-text:
+  availabilitytext:
     display: Availability Text
     type: text
 
   content:
     display: About Me Content
+    required: true
+    type: markitup
+
+  whatidocontent:
+    display: What I Can Do
+    required: true
+    type: markitup
+
+  factscontent:
+    display: Interesting Facts
     required: true
     type: markitup
 

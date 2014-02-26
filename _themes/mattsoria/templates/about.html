@@ -3,12 +3,29 @@
     <h2 class="animated fadeInDownBig">Hey! I'm matt.</h2>
   </div>
 </section>
-<section class="callout">
-  <h2 class="availability {{ availability }}">{{ availability-text }}</h2>
+<section class="section status_section">
+  <div class="global_wrapper grid">
+    <div class="grid_item one-half-left">
+      <h3>current location: {{ currentlocation }}</h3>
+    </div>
+    <div class="grid_item one-half-right">
+      <h3 class="availability {{ availability }}">current availability: {{ availability }}</h3>
+    </div>
+  </div>
 </section>
 <section class="section main_section">
   <div class="global_wrapper">
     {{ content }}
+  </div>
+</section>
+<section class="section whatido_section">
+  <div class="global_wrapper">
+    {{ whatidocontent|markdown }}
+  </div>
+</section>
+<section class="section facts_section">
+  <div class="global_wrapper">
+    {{ factscontent|markdown }}
   </div>
 </section>
 <section class="section colophon_section">

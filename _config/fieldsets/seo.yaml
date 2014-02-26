@@ -2,12 +2,12 @@ title: SEO
 
 fields:
 
-  seo-keywords:
+  seokeywords:
     display: SEO Keywords
     required: false
     default:
     type: text
-  seo-description:
+  seodescription:
     display: SEO Description
     required: false
     default: "The online internet website of Web Dood, Illustrationist, and Happy Person, Matt Soria."
