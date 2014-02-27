@@ -4,20 +4,6 @@ var Main = (function ($) {
 		stickyNav: function () {
 			$(".nav_wrapper").sticky({topSpacing:0,className:"is_sticky"});
 		},
-		easyPeasyParallax: function () {
-			 
-			scrollPos = jQuery(this).scrollTop();
-			 
-			$('.paralax_section').css({
-			'background-position' : 'center ' + (-scrollPos/4)+"px"
-			});
-			 
-			$('.paralax_content').css({
-			'margin-top': (scrollPos/4)+"px",
-			'opacity': 1-(scrollPos/250)
-			});
-		 
-		},
 		sectionNav: function () {
 	    var topNav = $('.nav_wrapper').outerHeight() - 1;
 
@@ -116,7 +102,6 @@ var Main = (function ($) {
 		initMain: function () {
 			$(document).ready(function () {
 				Main.stickyNav();
-				Main.easyPeasyParallax();
 				Main.sectionNav();
 				Main.floatLabels();
 				Main.twitterFeed();
