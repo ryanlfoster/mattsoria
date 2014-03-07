@@ -11,6 +11,14 @@
       text-align: center;
       font-weight: $medium;
     }
+    ::selection {
+      color: $highlight;
+      background: $black;
+      }
+    ::-moz-selection {
+      color: $highlight;
+      background: $black;
+    }
   }
 
   .recent_work {

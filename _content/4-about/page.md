@@ -65,6 +65,8 @@ whatidocontent: |
   ## What I Do
   I work with clients or teams to create beautiful, interesting and effective designs for the web, and build those designs on top of a solid (but responsive) foundation of scalable, semantic, and [future-friendly](http://futurefriendlyweb.com/thinking.html) code.
   
+  I consider myself a **Front-end** Developer, which means I spend most of my time writing in **HTML**, **CSS** (Sass actually), and **JavaScript** (jQuery is my flavor), but I also spend a bit of time working with **PHP**. A website will get really stale, really fast if you can't edit or add to it, so I build sites for **content management systems** (CMS) like [WordPress](http://wordpress.org), [Statamic](http://statamic.com), and [Perch](http://grabaperch.com), which are my current favorites, but I will work with any CMS that best fits your project's needs.
+  
   ##How I Do It
   Whether I'm designing or developing, I am foremost a critical thinker, and approach every project with an open mind and the drive to get the very best results. I don't pretend to know everything, and indeed believe that my willingness to explore new and unknown concepts is one of my greatest strengths. To me, every project is a new opportunity to learn, and improve my craft.
   
