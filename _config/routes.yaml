@@ -5,7 +5,8 @@
 ###########################################################################################
 
 routes:
-
+  /sitemap:
+    layout: sitemap
   # SIMPLE ROUTE EXAMPLE
   # Visiting example.com/contact-us will...
   # load the /templates/contact.html template
@@ -21,6 +22,7 @@ routes:
   # /members/login:
     # template: success
     # layout: system
+
 
 ignore:
   # - success

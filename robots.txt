@@ -1,0 +1,7 @@
+# robotstxt.org/
+
+User-agent: *
+
+Sitemap: http://mattsoria.com/sitemap
+
+Host: http://mattsoria.com
