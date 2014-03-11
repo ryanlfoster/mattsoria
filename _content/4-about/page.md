@@ -78,7 +78,7 @@ whatidocontent: |
 factscontent: |
   ## A little background
   
-  - I have lived in and around the city of Chicago (USA) my whole life, until I moved to Valparaiso, Chile in July of 2013 - where I'm currently living and working. I made a blog called Permiso Valparaiso that I occasionally update with photos, and thoughts about my experiences here.
+  - I have lived in and around the city of Chicago (USA) my whole life, until I moved to Valparaiso, Chile in July of 2013 - where I'm currently living and working. I made a blog called [Permiso Valparaiso](http://permisovalparaiso.com) that I occasionally update with photos, and thoughts about my experiences here.
   
   - I studied photography in college, and though I still enjoy photography, I'm not pursing a career in it.
   
