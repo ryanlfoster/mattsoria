@@ -5,7 +5,7 @@ var Main = (function ($) {
 			$(".nav_wrapper").sticky({topSpacing:0,className:"is_sticky"});
 		},
 		sectionNav: function () {
-	    var topNav = $('.nav_wrapper').outerHeight() - 1;
+	    var topNav = $('.main_nav').outerHeight() - 1;
 
 	    function scroll(direction) {
 
