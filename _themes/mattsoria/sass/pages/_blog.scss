@@ -102,24 +102,27 @@
         margin: 1rem auto;
       }    
       a {
-        @include transition(text-shadow 0.3s ease 0s);
-        position: relative;
         color: $black;
-        text-decoration: underline;
+        position: relative;
         white-space: nowrap;
+        text-decoration: none;
+        border-bottom: 1px dotted;
+        @include transition(text-shadow 0.3s ease 0s, border 0.3s ease 0s);
         &:hover, &:active, &:focus {
+          border-bottom: 1px solid;
           @include text-shadow(1px 1px $base);
         }
       }
       blockquote {
-        @include text-shadow(1px 1px rgba(255,255,255,0.25));
-        margin: 2rem 0;
-        padding: 0.5rem 2rem;
         width: 100%;
-        border-left: 6px solid $black;
-        background: $base;
         color: $black;
+        margin: 2rem 0;
+        font-size: $mid;
         font-style: italic;
+        padding: 0.5rem 2rem;
+        background: $highlight;
+        border-left: 6px solid $black;
+        @include text-shadow(1px 1px rgba(255,255,255,0.25));
         p {
           display: inline;
           font-size: $mid;
