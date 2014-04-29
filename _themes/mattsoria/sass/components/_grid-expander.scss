@@ -36,7 +36,6 @@
     width: 100%;
     margin-top: 10px;
     text-align: left;
-    overflow: hidden;
     padding: 3rem 2rem;
     position: absolute;
     background: rgba(0,0,0,0.10);
@@ -140,21 +139,34 @@
     66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
   }
 
-  @include min-screen($bpMed) {
+  @include min-screen(775px) {
+    margin: 0 auto;
+    max-width: 630px;
     li {
-      height: 0;    
-      width: 30%;
-      margin-left: 4%;
-      overflow: hidden;
-      padding-bottom: 22.5%;
+      width: 300px; 
+      height: 225px;
+      margin-left: 30px;
+      vertical-align: top;
       display: inline-block;
-      &:first-of-type {
+      &:nth-of-type(odd) {
         margin-left: 0;
       }
     }
   }
 
-  @include max-screen($bpMed) {
+  @include min-screen(1120px) {
+    max-width: 960px;
+    li { 
+      &:nth-of-type(odd) {
+        margin-left: 30px;
+      }
+      &:nth-of-type(3n-2) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include max-screen(775px) {
     
     .og-expander h3 { font-size: 32px; }
     .og-expander p { font-size: 13px; }

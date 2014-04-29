@@ -9,7 +9,7 @@
     {{ entries:listing folder="work" limit="{ home_work_items }" }}
     <a href="{{ url }}" class="recent_work__item grid">
       <div class="recent_work__screenshot one-half-left">
-        <img src="{{ image }}" alt="{{ title }} {{ categories_list }}">
+        <img src="{{ thumbnail }}" alt="{{ title }} {{ categories_list }}">
       </div>
       <div class="recent_work__description one-half-right">
         <h3>{{ title }}<span class="sub_header">{{ categories_list }}</span></h3>
@@ -17,6 +17,9 @@
       </div>
     </a>
     {{ /entries:listing }}
+    <div class="section_action">
+      <a href="work" class="btn">See More</a>
+    </div>
   </div>
 </section>
 <section class="section recent_blogposts">
@@ -37,5 +40,8 @@
         </li>
       {{ /entries:listing }}
     </ol>
+    <div class="section_action">
+      <a href="blog" class="btn">See More</a>
+    </div>
   </div>
 </section>

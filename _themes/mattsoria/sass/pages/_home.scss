@@ -21,6 +21,14 @@
     }
   }
 
+  .section_action {
+    margin-top: 1rem;
+    text-align: center;
+    .btn {
+      width: 100%;
+    }
+  }
+
   .recent_work {
     background-color: $light;
     background-image: $noise;
@@ -63,9 +71,19 @@
         color: $black;
       }
     }
+    .section_action {
+      margin-top: 2rem;
+    }
   }
 
   @include min-screen($bpMed) {
+    .section_action {
+      .btn {
+        width: auto;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    }
     .recent_work {
       .recent_work__item {
         max-width: none;
