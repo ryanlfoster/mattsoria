@@ -11,6 +11,11 @@
     font-family: $mmm;
     margin: 0 0 1rem 0;
     font-weight: $regular;
+    a {
+      &:active {
+        outline: none;
+      }
+    }
     .mmmatt-a {
       margin-right: -0.5rem;
     }
