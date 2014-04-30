@@ -37,7 +37,7 @@ required:
 validate:
   name: alpha
   email: email
-  Gotcha: length: - 0 - 0
+  address: primeNumber
 
 # Error messages can be mapped to your fields and passed to the
 # template upon failure. They will be available here:
