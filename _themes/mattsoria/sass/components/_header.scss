@@ -6,12 +6,17 @@
   @include clearfix();
   h1 {
     line-height: 1;
-    font-size: $big;
-    color: $highlight;
-    font-family: $mmm;
+    padding: 0 20px;
     margin: 0 0 1rem 0;
-    font-weight: $regular;
+    #logo {
+      path {
+        fill: $highlight;
+        stroke: $highlight;
+      }
+    }
     a {
+      width: 100%;
+      max-width: 370px;
       &:active {
         outline: none;
       }
