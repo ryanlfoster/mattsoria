@@ -9,8 +9,8 @@
     height: 22rem;
     overflow: hidden;
     position: relative;
-    margin: -4rem -4rem 0;
     width: calc(8rem + 100%);
+    margin: -2rem -4rem -6rem;
     img {
       width: 100%;
       max-width: none;
@@ -19,6 +19,7 @@
   }
 
   article {
+    position: relative;
     .post_header {
       text-align: center;
       margin-bottom: 4rem;
@@ -159,6 +160,13 @@
     border-top: 3px solid $rgba;
   }
 
+  @include min-screen($bpSmall) {
+    .featured_image {
+      margin-top: -4rem;
+      margin-bottom: -4rem;
+    }
+  }
+
   @include min-screen($bpMed) {
     article {
       .post_header {
@@ -169,7 +177,7 @@
     }
     .featured_image {
       img {
-        top: -25%;
+        top: -10%;
       }
     }
   }
