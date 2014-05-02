@@ -26,10 +26,7 @@ seo-title:
   seo-title: 'Matt Soria &#8226; About'
   seo-description: "I'm a Web Designer & Front-end Developer, Illustrator, and Photographer from Chicago, IL, living and working in Valparaiso, Chile."
 seo-keywords: ""
-seo-description: >
-  The online internet website of Web Dood,
-  Illustrationist, and Happy Person, Matt
-  Soria.
+seo-description: The online internet website of Web Dood, Illustrationist, and Happy Person, Matt Soria.
 whatido-content: |
   |
     ## What I Do
@@ -63,7 +60,7 @@ facts-content: |
 currentlocation: valparaiso, chile
 whatidocontent: |
   ## What I Do
-  I work with clients or teams to create beautiful, interesting and effective designs for the web, and build those designs on top of a solid (but responsive) foundation of scalable, semantic, and [future-friendly](http://futurefriendlyweb.com/thinking.html) code.
+  I work with clients or teams to create beautiful, interesting and effective designs for the web, and build those designs on top of a solid (but responsive) foundation of scalable, semantic, and [future-friendly](http://futurefriendlyweb.com/thinking.html) code. With every project I work on I make it a priority to spend time with [performance](https://developers.google.com/speed/docs/best-practices/rules_intro) and [accessibility](http://a11yproject.com/) optimization.
   
   I consider myself a **Front-end** Developer, which means I spend most of my time writing in **HTML**, **CSS** (Sass actually), and **JavaScript** (jQuery is my flavor), but I also spend a bit of time working with **PHP**. A website will get really stale, really fast if you can't edit or add to it, so I build sites for **content management systems** (CMS) like [WordPress](http://wordpress.org), [Statamic](http://statamic.com), and [Perch](http://grabaperch.com), which are my current favorites, but I will work with any CMS that best fits your project's needs.
   
@@ -92,11 +89,7 @@ factscontent: |
   
   - My favorite movie is [_Hook_](http://www.imdb.com/title/tt0102057/), my favorite book is [_Ishmael_](http://en.wikipedia.org/wiki/Ishmael_%28novel%29), and my favorite day is Halloween.
 availabilitytext: "Sorry, I'm not available for freelance work right now!"
-seokeywords: ""
-seodescription: >
-  The online internet website of Web Dood,
-  Illustrationist, and Happy Person, Matt
-  Soria.
+seodescription: The online internet website of Web Dood, Illustrationist, and Happy Person, Matt Soria.
 ---
 ### I'm a Web Designer & Front-end Developer, artist, and **optimist**.
 ### I enjoy working on projects that are **fun** and **challenging**.
