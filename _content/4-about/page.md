@@ -71,7 +71,7 @@ whatidocontent: |
   
   I am dedicated to the highest standards of professionalism, integrity, and competence and promise to uphold the spirit and letter of the [Code of Professional Conduct](http://designproacademy.org/code-of-professional-conduct.html).
   
-  ### Also, I make it my mission to find the fun in everything I do.
+  ### I make it my mission to find the fun in everything I do.
 factscontent: |
   ## A little background
   
